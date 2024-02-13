@@ -10,9 +10,8 @@ from . import db
 from . import dtb
 from . import vef_source
 
-User, View, Product, Profile_View, Store = dtb.get_all("User"), dtb.get_all("View"), dtb.get_all("Product"), dtb.get_all("Profile_View"), dtb.get_all("Store")
+User, Store, Product, Profile_View, View, Saved_Product, Team = dtb.get_all("User"), dtb.get_all("Store"), dtb.get_all("Product"), dtb.get_all("Profile_View"), dtb.get_all("View"), dtb.get_all("Saved_Product"), dtb.get_all("Team")
 
-# {address}/login/david.nzube.official22@gmail.com/david.nzube.official22@gmail.com/8x7bty112(8jIj8*22@P21=+~-+1.m
 
 import os
 from werkzeug.utils import secure_filename
