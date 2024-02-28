@@ -139,6 +139,17 @@ def update_entry(api_email, api_password, api_key, model, column, column_value_p
     except Exception as e:
       return f"Update Failed -> {e}"
   
+@views.route('/<string:api_email>/<string:api_password>/<string:api_key>/handler/update_entry_dnd', methods=['POST'])
+def update_entry_dnd(api_email, api_password, api_key):
+  verify = vef_source.verify(api_email, api_password, api_key)
+  if verify == False:
+    return False
+  else:
+    try:
+      dtb.commit(dtb.update_entry(request.form['model'], request.form['column'], request.form['cvp'], dnd=True))
+      return "None"
+    except Exception as e:
+      return f"Update Failed -> {e}"
 
 @views.route('/<string:api_email>/<string:api_password>/<string:api_key>/handler/delete_entry/<string:model>/<string:column>')
 def delete_entry(api_email, api_password, api_key, model, column):

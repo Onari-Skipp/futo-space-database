@@ -724,7 +724,7 @@ def is_a_collaborator(id):
 
     joined_team = []
 
-    print(allTeams)
+    # print(allTeams)
 
     for i in allTeams:
         for k, v in i.items():
@@ -742,4 +742,85 @@ def is_a_collaborator(id):
 
     return _
 
-print(is_a_collaborator("4"))
+# print(is_a_collaborator("4"))
+
+# c = ""
+# v = ""
+# print(f"c: {c}\nv: {v}\n-------------------\n")
+# rs3 = {"e": "r"}
+
+# for h, i in rs3.items():
+#     c = h
+#     v = i
+
+# print(f"c: {c}\nv: {v}\n-------------------\n")
+
+
+vx = {
+"NAME": "vidbuy_db",
+"PASSWORD": "scrypt:32768:8:1$PmPR6BLpjn7MraZd$b52d4ac7bcd91ba49f5ecda4203475b104fc9cd749bf70e968fbef39c28d95a5e3f5cdf8b3ea0269f765e863850687a7ba260a5e6f598d3ecfb3a3fcc0510fda",
+"CONTENT": {
+        "Users": [{'0': {'id': 'NULL', 'email': 'NULL', 'password': 'NULL', 'name': 'NULL', 'age': 'NULL', 'description': 'NULL', 'userType': 'NULL', 'niche': 'NULL', 'username': 'NULL', 'intrests': 'NULL', 'store_link': 'NULL', 'is_verified_account': 'NULL', 'identification_document': 'NULL', 'identification_document_path': 'NULL', 'profileViewCount': 'NULL', 'is_pro_user': 'NULL', 'profile_picture': 'NULL', 'user_theme': 'NULL'}}, ['id', 'email', 'password', 'name', 'age', 'description', 'userType', 'niche', 'username', 'intrests', 'store_link', 'is_verified_account', 'identification_document', 'identification_document_path', 'profileViewCount', 'is_pro_user', 'profile_picture', 'user_theme']],
+        
+        "Notification": [{'0': {'id': 'NULL'}}, ['id']],
+        "Product": [{'0': {
+                        'id': 'NULL', 
+                        'name': 'NULL', 
+                        'description': 'NULL', 
+                        'price': 'NULL', 
+                        'discount': 'NULL', 
+                        'niche': 'NULL', 
+                        'newPrice': 'NULL', 
+                        'viewCount': 'NULL', 
+                        'image': 'NULL', 
+                        'image_path': 'NULL', 
+                        'user_id': 'NULL', 
+                        'store_id': 'NULL', 
+                        'condition': 'NULL', 
+                        'username': 'NULL', 
+                        'is_sponsored': 'NULL'}
+                    } , ['id', 'name', 'description', 'price', 'discount', 'niche', 'newPrice', 'viewCount', 'image', 'image_path', 'user_id', 'store_id', 'condition', 'username', 'is_sponsored']],
+
+        "Profile_View": [{'0': {
+                        'id': 'NULL', 
+                        'user_id': 'NULL', 
+                        'store_id': 'NULL', 
+                        'timestamp': 'NULL'}
+                    } , ['id', 'user_id', 'store_id', 'timestamp']],
+
+        "Saved_Product": [{'0': {
+                        'id': 'NULL', 
+                        'user_id': 'NULL', 
+                        'product_id': 'NULL', 
+                        'timestamp': 'NULL'}
+                    } , ['id', 'user_id', 'product_id', 'timestamp']],
+
+        "Store": [{'0': {
+                        'id': 'NULL', 
+                        'name': 'NULL', 
+                        'description': 'NULL', 
+                        'user_id': 'NULL', 
+                        'socials': 'NULL', 
+                        'banner_picture': 'NULL', 
+                        'banner_picture_path': 'NULL', 
+                        'address': 'NULL', 
+                        'opening_hour': 'NULL', 
+                        'closing_hour': 'NULL', 
+                        'niche': 'NULL'}
+                    } , ['id', 'name', 'description', 'user_id', 'socials', 'banner_picture', 'banner_picture_path', 'address', 'opening_hour', 'closing_hour', 'niche']],
+
+        "Team": [{'0': {
+                        'id': 'NULL', 
+                        'store_id': 'NULL', 
+                        'members': 'NULL', 
+                        'timestamp': 'NULL'}
+                    } , ['id', 'store_id', 'members', 'timestamp']],
+
+        "View": [{'0': {
+                        'id': 'NULL', 
+                        'user_id': 'NULL', 
+                        'product_id': 'NULL'}
+                    } , ['id', 'user_id', 'product_id']]
+    }
+}
+

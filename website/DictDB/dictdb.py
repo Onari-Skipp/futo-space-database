@@ -119,8 +119,11 @@ class DictDB:
 
 		return [model_name, database_to_add]
 
-	def update_entry(self, model_name, column, cvp):
-		cvp = eval(encrypt.decrypter(cvp))
+	def update_entry(self, model_name, column, cvp, dnd=False):
+		if dnd == False:
+			cvp = eval(encrypt.decrypter(cvp))
+		else:
+			cvp = eval(cvp)
 		with open(f"instance/_io/models/{model_name}.json", "r") as model:
 			database_to_update = json.load(model)
 
