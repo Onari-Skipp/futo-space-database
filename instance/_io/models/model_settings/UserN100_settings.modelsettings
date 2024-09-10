@@ -1,0 +1,1 @@
+Schema: ['id', 'email', 'password', 'name', 'user_theme', 'is_premium_account']

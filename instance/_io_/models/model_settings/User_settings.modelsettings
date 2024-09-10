@@ -1,0 +1,1 @@
+Schema: ['id', 'email', 'password', 'name', 'age', 'description', 'userType', 'niche', 'username', 'intrests', 'store_link', 'is_verified_account', 'identification_document', 'identification_document_path', 'profileViewCount', 'is_pro_user', 'profile_picture', 'user_theme']

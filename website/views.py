@@ -10,7 +10,7 @@ from . import db
 from . import dtb
 from . import vef_source
 
-User, Store, Product, Profile_View, View, Saved_Product, Team = dtb.get_all("User"), dtb.get_all("Store"), dtb.get_all("Product"), dtb.get_all("Profile_View"), dtb.get_all("View"), dtb.get_all("Saved_Product"), dtb.get_all("Team")
+
 
 
 import os
@@ -35,6 +35,7 @@ def all(api_email, api_password, api_key):
   if verify == False:
     return False
   else:
+    User, Store, Product, Profile_View, View, Saved_Product, Team = dtb.get_all("User"), dtb.get_all("Store"), dtb.get_all("Product"), dtb.get_all("Profile_View"), dtb.get_all("View"), dtb.get_all("Saved_Product"), dtb.get_all("Team")
     return str([f"User: {User}, View: {View}, Product: {Product}, Profile_View: {Profile_View}, Store: {Store}"])
 
 

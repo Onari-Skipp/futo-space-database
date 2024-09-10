@@ -824,3 +824,136 @@ vx = {
     }
 }
 
+""""""
+
+u = """<h2>Work and Energy in Physics</h2>
+<p>The term "work" in science has a definite meaning. Work done in science or in Physics is when a force moves in one point of application along the direction of its line of action. In its simplest mechanical form, it is defined as the product of the force and the distance through which the force acts.</p>
+
+<p><strong>Work = Force x Distance</strong></p>
+
+<p>If the direction of the force and the distance moved are both vertically upwards, we write:</p>
+<p><strong>W = F x h</strong> — (1)</p>
+
+<p>If the direction of the force and the distance moved are both horizontal, we write:</p>
+<p><strong>W = F x d</strong> — (2)</p>
+
+<h3>Example:</h3>
+<p>Find the work done in lifting a mass of 5.0kg through a height of 3.0 meters. Find the work done.</p>
+<p><strong>Solution:</strong></p>
+<ul>
+    <li>m = 5kg</li>
+    <li>h = 3m</li>
+    <li>F = m x g = 5 x 10 = 50 N</li>
+    <li>W = 50 x 3 = 150 Nm</li>
+</ul>
+
+<p>In the MKS system of units, work has the absolute unit of kg·m²/s², which is equal to the derived unit of Newton Meter (Nm). In the CGS system of units, the corresponding absolute unit is equal to the dyne centimeter.</p>
+
+<p>In the MKS system of units, 1 Nm is equal to 1 Joule and in the CGS system, 1 dyne centimeter is equal to 1 erg.</p>
+
+<h3>Example:</h3>
+<p>A boy weighing 340 N walks up a flight of stairs consisting of 15 steps each of 10 cm high. What work is done by the boy?</p>
+<p><strong>Solution:</strong></p>
+<ul>
+    <li>F = 340N</li>
+    <li>h = 10 cm x 15 stairs = 150 cm = 1.5m</li>
+    <li>W = F x h = 340 x 1.5 = 510 Nm</li>
+</ul>
+
+<h3>Example:</h3>
+<p>A boy of mass 70 kg runs up a set of steps of total height 4.0 m. Find the work done.</p>
+<p><strong>Solution:</strong></p>
+<ul>
+    <li>F = m x g = 70 x 10 = 700N</li>
+    <li>h = 4m</li>
+    <li>W = 700 x 4 = 2800 Nm</li>
+</ul>
+
+<h3>Example:</h3>
+<p>A loaded sack of total mass 55 kg falls down from the floor of the lorry 3.9 m, calculate the work done.</p>
+<p><strong>Solution:</strong></p>
+<p>W = 1.93 Nm</p>
+
+<h3>Exercise:</h3>
+<p>A boy is pulled 20 m above a horizontal plane with a constant force of n Newton.</p>
+<ol>
+    <li>Parallel to the plane</li>
+    <li>In the direction of angle 60 degrees to the horizontal, calculate the work done.</li>
+</ol>
+
+<h2>Energy</h2>
+<p>Energy is defined as the capacity to do work.</p>
+
+<h3>Classifications of Mechanical Energy</h3>
+<p>Mechanical Energy simply means the energy stored or energy possessed by a virtue of its position or state. The figure below shows a body of mass when the height of h above the suspended. The potential energy possessed by the body is given by:</p>
+<p><strong>P.E: F x h</strong></p>
+
+<p>Since the weight of the body is equal to the gravitational force, F is equal to mg, therefore:</p>
+<p><strong>P.E = mgh</strong></p>
+
+<h3>Example:</h3>
+<p>Find the potential energy of a boy of mass 10 kg standing on a building floor 15 m above the ground.</p>
+<p><strong>Solution:</strong></p>
+<p>PE = 10 x 10 x 15 = 1500 J</p>
+
+<h3>Kinetic Energy:</h3>
+<p>Kinetic energy of a moving body is defined as the ability to do work by the virtue of its motion. If the mass of the body is m, and the body moves with a constant speed v, the kinetic energy is given by:</p>
+<p><strong>KE = 1/2 mv²</strong></p>
+
+<h3>Example:</h3>
+<p>An object of mass 15 kg is moving with a constant velocity of 15 m/s. Calculate its kinetic energy.</p>
+<p><strong>Solution:</strong></p>
+<p>KE = 1/2 x 15 x 15² = 112.5 J</p>
+
+<h2>Power</h2>
+<p>Power is work done in a given time. It’s the time-rate of doing work. It’s given by:</p>
+<p><strong>P = Work Done (Energy Expended) / Time</strong></p>
+<p>If work is in Joules and time is in seconds, then the power is measured in J/s (Watts).</p>
+
+<h3>Example:</h3>
+<p>A car is moving at 20 m/s. The force retarding its motion is 500 N. Calculate the engine power of the car required to maintain motion.</p>
+<p><strong>Solution:</strong></p>
+<p>First, calculate the frictional force (F) opposing the motion, which is equal to the force retarding its motion (500 N).</p>
+<p>Next, we need to calculate the velocity (v) of the car, which is given as 20 m/s.</p>
+<p>We can then calculate the power (P) required to maintain motion using the formula:</p>
+<p><strong>P = F × v</strong></p>
+<p>Substituting the values, we get:</p>
+<p>P = 500 N × 20 m/s = 10,000 W</p>
+
+<h2>Transformation & Conservation of Energy:</h2>
+<p>A foregoing discussion has turned that work, potential energy & kinetic energy are all related by a means of simple energy which can be changed from one form to another.</p>
+
+<p>Energy transformation is the process of changing energy from one form to another. This process involves a conversion of energy from one type to another, but the total energy remains constant.</p>
+
+<p>For example, when you turn on a light bulb, electrical energy is converted into light and heat. The energy hasn't been created; it's been transformed from one form (electrical) to another (light and heat).</p>
+
+<p>Energy transformation is an essential concept in physics and is crucial for understanding how energy is harnessed and utilized in various natural and man-made phenomena.</p>
+
+"""
+
+print(repr(u))
+
+
+# import json
+# with open("g.json", "r") as asjska:
+#     ewer = json.load(asjska)
+
+# print(ewer)
+
+
+# e = "<h2>Infinite Geometric Sequence</h2>\n\n<p>Consider the series</p>\n<p>1 + 1/2 + 1/4 + 1/8</p>\n<p>The sum of the first n<sup>th</sup> terms is given by:</p>\n\n<p>S<sub>n</sub> = (a(1 - r<sup>n</sup>))/(1 - r), r < 1\nS<sub>n</sub> = 1(1 - (1/2)<sup>n</sup>)) / (1 - 1/2)\nS<sub>n</sub> = (1 - 1/2<sup>n</sup>) / 1/2\nS<sub>n</sub> = 2(1 - 1/2<sup>n</sup>\nS<sub>n</sub> = (2 - 1/2<sup>(n-1)</sup>)\nas n -> infinity,  then we have:</p>\n\n<p>S<sub>n</sub> -> infinity = lim (2 - 1/2<sup>(n-1)</sup>)\nS<sub>n</sub> -> infinity = 2 - 1/2<sup>∞</sup></p>\n\n<p>If r lies between -1 < r < 1, then r<sup>n</sup> becomes smaller and smaller as n becomes larger and larger. We say that the limiting value of ar<sup>n</sup> as n tends to ∞ is 0. This as n increases, S<sub>n</sub> = approaches a limiting value of a / (1-r).\nWe say that the series converges to the value of a/(1-r) which is the sum to infinite of the series.</p>\n<p>Therefore if -1 < r < 1 i.e. (|r| < 1). The sim to infinite of the geometric series is given by:</p>\n<p>lim<sub>n->∞</sub> = S<sub>n</sub> = a / (1-r)</p>\n \n<p>S<sub>n</sub> = 1 / (1-(1/2)) = 2 / 1 = 2</p>\n\n\n<em><b>Example 1.1</b></em>\n<p>To what sum does the following series:</p>\n<p>1 - 1/3 + 1/9 - 1/27 + …</p>\n<em><b>Solution 1.1</b></em>\n<p>-1 < (1/3) < 1</p>\n<p>S = a/(1-r) = 1 / (1 - (-1/3)) = 3/4</p>\n\n<h3>Mathematical Induction</h3>\n<p>Consider a mathematical statement P(n) associated with each positive integer (that is at all times, n must be positive).\nIf P(1) is true and P(2) is true, then P(k) implies that P(k + 1) os also true. Therefore it says that P(n) is true for all n.</p>\n\n<em><b>Example 1.2</b></em>\n<p>Show that the sum of positive integer 1 + 2 + 3 + … + n = n(n+1)/2</p>\n<em><b>Solution 1.2</b></em>\n<p>First, we check it the statement P(n) is true for n = 1, n = 2</p>\n<p>For n = 1: P(1) = 1, then 1(1+1) / 2 = 2 / 2 = 1</p>\n<p>For n = 2: 1 + 2 = 3, then 2(2+1) / 2 = 3</p>\n\n<p>Next we assume that the statement P(n) is true for n = k that</p>\n<p>1 + 2 + 3 + … K = K(K + 1) / 2 ———(1)</p>\n\n<p>Next, we want to show that P(n) is true for n = k + 1 </p>\n\n<p>From equation (1)</p>\n\n<p>1 + 2 + 3 + … K = (K(K + 1) / 2 ) + (k + 1) </p>\n<p>1 + 2 + 3 + … K = (K(K + 1) + 2(K + 1)) / 2</p>\n<p>1 + 2 + 3 + … K = ((K + 1)[K + 2]) / 2</p>\n\n<p>Therefore, P(n) is true for all n</p>"
+# print("<h2>Infinite Geometric Sequence</h2>\n\n<p>Consider the series</p>\n<p>1 + 1/2 + 1/4 + 1/8</p>\n<p>The sum of the first n<sup>th</sup> terms is given by:</p>\n\n<p>S<sub>n</sub> = (a(1 - r<sup>n</sup>))/(1 - r), r < 1\nS<sub>n</sub> = 1(1 - (1/2)<sup>n</sup>)) / (1 - 1/2)\nS<sub>n</sub> = (1 - 1/2<sup>n</sup>) / 1/2\nS<sub>n</sub> = 2(1 - 1/2<sup>n</sup>\nS<sub>n</sub> = (2 - 1/2<sup>(n-1)</sup>)\nas n -> infinity,  then we have:</p>\n\n<p>S<sub>n</sub> -> infinity = lim (2 - 1/2<sup>(n-1)</sup>)\nS<sub>n</sub> -> infinity = 2 - 1/2<sup>∞</sup></p>\n\n<p>If r lies between -1 < r < 1, then r<sup>n</sup> becomes smaller and smaller as n becomes larger and larger. We say that the limiting value of ar<sup>n</sup> as n tends to ∞ is 0. This as n increases, S<sub>n</sub> = approaches a limiting value of a / (1-r).\nWe say that the series converges to the value of a/(1-r) which is the sum to infinite of the series.</p>\n<p>Therefore if -1 < r < 1 i.e. (|r| < 1). The sim to infinite of the geometric series is given by:</p>\n<p>lim<sub>n->∞</sub> = S<sub>n</sub> = a / (1-r)</p>\n \n<p>S<sub>n</sub> = 1 / (1-(1/2)) = 2 / 1 = 2</p>\n\n\n<em><b>Example 1.1</b></em>\n<p>To what sum does the following series:</p>\n<p>1 - 1/3 + 1/9 - 1/27 + …</p>\n<em><b>Solution 1.1</b></em>\n<p>-1 < (1/3) < 1</p>\n<p>S = a/(1-r) = 1 / (1 - (-1/3)) = 3/4</p>\n\n<h3>Mathematical Induction</h3>\n<p>Consider a mathematical statement P(n) associated with each positive integer (that is at all times, n must be positive).\nIf P(1) is true and P(2) is true, then P(k) implies that P(k + 1) os also true. Therefore it says that P(n) is true for all n.</p>\n\n<em><b>Example 1.2</b></em>\n<p>Show that the sum of positive integer 1 + 2 + 3 + … + n = n(n+1)/2</p>\n<em><b>Solution 1.2</b></em>\n<p>First, we check it the statement P(n) is true for n = 1, n = 2</p>\n<p>For n = 1: P(1) = 1, then 1(1+1) / 2 = 2 / 2 = 1</p>\n<p>For n = 2: 1 + 2 = 3, then 2(2+1) / 2 = 3</p>\n\n<p>Next we assume that the statement P(n) is true for n = k that</p>\n<p>1 + 2 + 3 + … K = K(K + 1) / 2 ———(1)</p>\n\n<p>Next, we want to show that P(n) is true for n = k + 1 </p>\n\n<p>From equation (1)</p>\n\n<p>1 + 2 + 3 + … K = (K(K + 1) / 2 ) + (k + 1) </p>\n<p>1 + 2 + 3 + … K = (K(K + 1) + 2(K + 1)) / 2</p>\n<p>1 + 2 + 3 + … K = ((K + 1)[K + 2]) / 2</p>\n\n<p>Therefore, P(n) is true for all n</p>")
+
+
+
+
+
+
+
+
+
+
+amount = 120000
+amount = (amount/100)
+# amount = "{:.2f}".format(amount)
+print((amount))

@@ -1,0 +1,1 @@
+Schema: ['name', 'device_uid', 'ip_address', 'mac_id', 'category', 'last_maintained', 'connected_status', 'device_health', 'device_dob', 'user_id']

@@ -1,0 +1,1 @@
+Schema: ['email', 'password', 'first_name', 'last_name', 'second_name', 'wallet_balance', 'phone_number', 'referral_count', 'referral_origin', 'username', 'user_id', 'dob', 'user_type', 'referral_earning']

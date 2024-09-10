@@ -1,0 +1,1 @@
+Schema: ['name', 'description', 'reg_number', 'image_raw', 'image_name', 'price', 'subject', 'level', 'is_done', 'datestamp', 'timestamp', 'visibility', 'solution_count']

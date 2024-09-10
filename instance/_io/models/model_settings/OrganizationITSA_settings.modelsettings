@@ -1,0 +1,1 @@
+Schema: ['name', 'industry_sector', 'staff_count', 'email', 'password', 'address', 'phone_number', 'website', 'social1', 'social2']

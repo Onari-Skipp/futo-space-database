@@ -1,7 +1,1576 @@
-<!doctype html>
+<!-- <h2>Infinite Geometric Sequence</h2>
+
+<p>Consider the series</p>
+<p>1 + 1/2 + 1/4 + 1/8</p>
+<p>The sum of the first n<sup>th</sup> terms is given by:</p>
+
+<p>S<sub>n</sub> = (a(1 - r<sup>n</sup>))/(1 - r), r < 1
+S<sub>n</sub> = 1(1 - (1/2)<sup>n</sup>)) / (1 - 1/2)
+S<sub>n</sub> = (1 - 1/2<sup>n</sup>) / 1/2
+S<sub>n</sub> = 2(1 - 1/2<sup>n</sup>
+S<sub>n</sub> = (2 - 1/2<sup>(n-1)</sup>)
+as n -> infinity,  then we have:</p>
+
+<p>S<sub>n</sub> -> infinity = lim (2 - 1/2<sup>(n-1)</sup>)
+S<sub>n</sub> -> infinity = 2 - 1/2<sup>∞</sup></p>
+
+<p>If r lies between -1 < r < 1, then r<sup>n</sup> becomes smaller and smaller as n becomes larger and larger. We say that the limiting value of ar<sup>n</sup> as n tends to ∞ is 0. This as n increases, S<sub>n</sub> = approaches a limiting value of a / (1-r).
+We say that the series converges to the value of a/(1-r) which is the sum to infinite of the series.</p>
+<p>Therefore if -1 < r < 1 i.e. (|r| < 1). The sim to infinite of the geometric series is given by:</p>
+<p>lim<sub>n->∞</sub> = S<sub>n</sub> = a / (1-r)</p>
+ 
+<p>S<sub>n</sub> = 1 / (1-(1/2)) = 2 / 1 = 2</p>
+
+
+<em><b>Example 1.1</b></em>
+<p>To what sum does the following series:</p>
+<p>1 - 1/3 + 1/9 - 1/27 + …</p>
+<em><b>Solution 1.1</b></em>
+<p>-1 < (1/3) < 1</p>
+<p>S = a/(1-r) = 1 / (1 - (-1/3)) = 3/4</p>
+
+<h3>Mathematical Induction</h3>
+<p>Consider a mathematical statement P(n) associated with each positive integer (that is at all times, n must be positive).
+If P(1) is true and P(2) is true, then P(k) implies that P(k + 1) os also true. Therefore it says that P(n) is true for all n.</p>
+
+<em><b>Example 1.2</b></em>
+<p>Show that the sum of positive integer 1 + 2 + 3 + … + n = n(n+1)/2</p>
+<em><b>Solution 1.2</b></em>
+<p>First, we check it the statement P(n) is true for n = 1, n = 2</p>
+<p>For n = 1: P(1) = 1, then 1(1+1) / 2 = 2 / 2 = 1</p>
+<p>For n = 2: 1 + 2 = 3, then 2(2+1) / 2 = 3</p>
+
+<p>Next we assume that the statement P(n) is true for n = k that</p>
+<p>1 + 2 + 3 + … K = K(K + 1) / 2 ———(1)</p>
+
+<p>Next, we want to show that P(n) is true for n = k + 1 </p>
+
+<p>From equation (1)</p>
+
+<p>1 + 2 + 3 + … K = (K(K + 1) / 2 ) + (k + 1) </p>
+<p>1 + 2 + 3 + … K = (K(K + 1) + 2(K + 1)) / 2</p>
+<p>1 + 2 + 3 + … K = ((K + 1)[K + 2]) / 2</p>
+
+<p>Therefore, P(n) is true for all n</p> -->
+
+<!-- <h2>COS101</h2>
+<ol>
+	<li>Electronic devices were introduced in the 1940s</li>
+	<li>A computer takes input(Binary) processes it and gives an input</li>
+	<li>Those processes takes place through software</li>
+	<li>GUI allows for interactivity would interfaces</li>
+</ol>
+
+<p>The study of computational systems and computers is termed computer science. It is an extensive area that covers every details from the algorithm that comprise software development to the ways in which software communicate to the hardware to the quality of software development & design. after studying computer science, one becomes a computer scientist. Their proficiency in programming, along with a variety of mathematical algorithm are coding techniques allows them to analyse computer operations and create new software & systems.</p>
+
+<h4><u>Discipline of Computer Science</u></h4>
+<p>Its multidisciplinary with many branches. It spans across different fields including the one listed below</p>
+<ol>
+	<li>Software Engineering</li>
+	<li>Artificial Intelligence</li>
+	<li>Computer Network</li>
+	<li>Computer Graphics & Visualizations</li>
+	<li>Data Science</li>
+	<li>Database Management Systems</li>
+	<li>Data Systems & Algorithm</li>
+	<li>Programming</li>
+</ol>
+<p>others include:</p>
+<ol>
+	<li>Computer Security</li>
+	<li>Game Design</li>
+	<li>Computer Architecture</li>
+	<li>Robotics</li>
+	<li>Cloud computing</li>
+	<li>Computer Interaction</li>
+</ol>
+
+<h4><u>CYBERSECURITY</u></h4>
+<p>It is the discipline of defending programs, network and systems from online threats. Typically the goals of these cyberattacks are to destruct regular corporate corporation, obtain, alter or delete sensitive data or use ransomware to demand money from people.</p>
+<h4>Types of Cyber Security</h4>
+<ol>
+	<li>Network Security</li>
+	<li>Cloud Security</li>
+	<li>Endpoint Security</li>
+	<li>Mobile Security</li>
+	<li>IoT Security</li>
+	<li>Application Security</li>
+	<li>Zero Trust</li>
+</ol>
+
+<h4><u>DATA SCIENCE</u></h4>
+<p>It is the study of data to obtain valuable business insights/information. Inquires like <b>what happened</b>, <b>what will happen</b>, <b>what can be done with the result</b></p> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>Simple Cell</h1>
+<p>When particles are located only at the corners of the cell, the unit cell is termed as simple cell.</p>
+
+<h1>Body Centered Cell</h1>
+<p>When particles are located at the corner and center of the unit cell, theyre termed body-centered cubic cell.</p>
+
+<h1>Face Centered Cell</h1>
+<p>When particles are located at the corner and at the center of its face, theyre termed face centered cubic cells.</p>
+
+<h1>Closed Packing</h1>
+<p>Closed packed structure or crystals have equal sized spheres. In a closed packed structure, each sphere has twelve nearest neighbors. This represents the shape of an atom, ion, or a molecule and helps to visualize the symmetry of the crystal.</p>
+
+<h1>Crystal Depots</h1>
+<p>In a crystalline solid, the atoms, ions, or molecules are arranged in a definite repetitive pattern but occasionally, defects may occur in the pattern. Certain defects occur as a defect where an ion, atom, or molecule of the impurities are too large to fit into a regular position without disrupting the pattern, thereby causing imperfections.</p>
+
+<h1>Radius Ratio for Ionic Compounds</h1>
+<p>The radius ratio for ionic compounds is given by:</p>
+<pre>radius of cations/radius of anions = r<sup>+</sup> / r<sup>-</sup></pre>
+
+<h1>First Law of Thermodynamics and Chemical Equilibrium</h1>
+<p>Thermodynamics is the study of three various forms of energy such as heat (thermo) in motion (dynamics), work, temperature, and energy. Energy is interconvertible into one form or the other. Work and heat are the thermodynamic functions that describe the convertibility of energy from one form to another.</p>
+
+<h2>Laws of Thermodynamics:</h2>
+<ol>
+    <li>First law states that energy can neither be created nor destroyed but can be transformed from one form to another.</li>
+</ol>
+
+<h2>Thermodynamics Features</h2>
+<ul>
+    <li><strong>Heat Energy (q)</strong> is the quantity of energy that flows across a boundary of a system during a change in its state by virtue of differences in temperature between the system and its surroundings.</li>
+    <li><strong>Work (W)</strong> is the form in which energy is transferred across a boundary by the displacement of some parts of the system due to the actions of an external force.</li>
+    <li><strong>System</strong> is the part of the universe which the scientist has special attention to for the purpose of study.</li>
+    <li><strong>Surrounding</strong> are the immediate vicinity which can interact immediately with a system under study.</li>
+    <li><strong>Boundary</strong> is the dividing line or surface that separates the system from the immediate surroundings.</li>
+</ul>
+
+<h2>Types of Boundary</h2>
+<ul>
+    <li><strong>Rigid surface</strong>: a rigid surface must consist of a tight shape portion of the surface.</li>
+    <li><strong>Impermeable surface</strong>: a surface that does not allow the flow of matter between the boundary and the surface.</li>
+</ul>
+ -->
+
+
+
+
+
+<!-- A permeable surface: its a surface that allows the flow of matter through the boundary
+ • An adiabatic surface: it prevents the flow of heat energy. Its also called an insulating surface
+ • Diathermal surface: it prevents the flow of matter but allows the passage of heat energy in the absence of any external force. 
+
+Types of system:
+ • Closed System: a closed system is a system which does not allow the passage of matter into the system. The mass of the system remains constant and the internal heat energy changes
+dm = 0, dE ≠ 0
+ • Open system: its a permeable or semi-permeable boundary that allows the passage of both mass and energy 
+dm ≠ 0, dE ≠ 0
+ • Isolated system: its a system that does not allow passage of matter and internal energy
+dm = 0, dE = 0
+
+Thermodynamic Process
+A thermodynamic process is a process that necessitate a change in the state of change of system.
+This processes are:
+ 1. Isobaric process: this a process that occurs under constant pressure e.g. freezing of ice
+dp = 0
+ 2. Isothermic process: this is a process that occurs under constant temperature
+dT = 0
+ 3. Isochoric process: this is a process that occurs under constant volume 
+dV = 0
+ 4. Adiabatic Process: this is a process that occurs under constant heat( no change in internal heat). It is used in Air Conditioning compressors.
+dq = 0 or dH = 0
+ 5. Reversible Process: this is a process that occurs as low as possible and can change direction by an small unidentified change of variable.
+ 6. Irreversible Process: this is a spontaneous change that occurs rapidly such that the reversed direction is impossible .
+ 7. Equilibrium Process: this is a process in which the forward and the backward reaction are equal 
+ 8. Cyclic process: its a process that returns with heat from the final stage to the initial stage in the cycle
+
+Internal Energy
+A body by virtue of its position in the universe posses an amount of energy. When a body at rest posses energy and temperature increases, the potential energy of that body increases by heat energy acquired. Therefore, change of internal energy at constant volume is defined as the 
+dE = E1 - E2
+where E1 is the initial energy
+and E2 is the final energy
+Note: when dE is > 0, the system gains energy but when dE < 0, the system loses energy.
+
+Try:
+A gas in a vessel has an internal energy of 112.7 KJ at 27 degrees Celsius. The gas reheated to 211 degree Celsius and the internal energy is thrice its initial value
+Calculate the change of the internal energy? -->
+
+
+<!-- Solution to previous exercise
+E1 = 112.7
+DE = E2 - E1
+E2 = 3 x 112.7
+E2 = 338.1 Kj
+
+First Law of Thermodynamics
+It’s states that heat change in a system is equal to the change of internal energy & the work done. It’s given as:
+dq = dE + dW 
+where q is the heat change(heat input/output)
+where E is the change in internal energy(when energy increases or decreases
+where W is the work done by the system (dW < 0 or dW > 0)
+
+Principle of Thermodynamics
+A cylinder of cross sectional areas fitted with a frictionless and weight less pistol as given in the diagram below
+
+(Diagram included but not attached)
+
+
+
+Work done on Expansion
+P2 > P1
+dW = PAdL
+dW = pdv 
+
+after integrating, W > 0
+
+Work done on Compression 
+P2 < P1
+dW = P2 AdL
+dW = P2 dv 
+
+after integrating, W < 0
+
+first law of thermodynamics: dq = dE +/- dW
+
+W > 0 dq = dE + v1 integral v2 P1 dv
+W < 0 dq = dE - v2 integral v1 P2 dv
+
+Example:
+A mole of Nitrogen in a weightless and frictionless pistol. The weightless pistol expands such that the internal pressure is balanced by the external pressure at every stage in which the initial volume of the gas is 15 m^3 which reaches the final volume of 25m^3 at 27 degree Celsius. What is the work done? Hence comment on the work done.
+Solution:
+W = v1 integral v2 p dv
+pv = nRT
+W = v1 integral v2 (nRT/v) dv
+W = nRT v1 integral v2 dv/v
+
+W = nRT Ln (v2/v1)
+substituting, 
+W = 1 x 8.314 x 300 x (25/15)
+W = 1274 J
+W = 1.274 KJ
+
+First Law at constant volume 
+dq = dE +/- dW
+dV = 0
+dW = 0
+dq = dE
+
+First Law at constant pressure - Isobaric
+W = v1 integral v2 p dv 
+W = p(v2 - v1)
+dq = dE + p(v2 - v1)
+dE = dq - p(v2 - v1)
+
+Example:
+A gas in a cylinder pistol arrangement expands under 1.5 atm and 2.5m^3 of its original volume expands twice. Find the work done.
+Solution:
+V1 = 2.5 m^3
+V2 = 6.25 m^3
+P = 1.5 atm -> Pascal
+P = 151,837.5 Pascal
+
+W = p(v2 - v1)
+W = 151,837.5(6.25 - 2.5)
+
+Exercise
+A gas in a chemical reaction is heated at 45 C to thrice its initial pressure. Assuming the gas constant R is 8.314 calculate the work done? -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Solution to last exercise 
+T1 = 45 + 273 = 318
+n = 1 mole
+P1 = P1
+P2 = 3P1
+R = 8.314
+W = n R T Ln (v2/v1)
+P1V1 = P2V2
+P1/P2 = V1/V2
+
+W = 1 x 8.314 x 318 ln(P1/3P1)
+W = 1 x 8.314 x 318 ln(1/3)
+W = -2904 J
+W = -2.904 KJ
+
+Relationship between enthalpy and first law
+Enthalpy is when heat changes at constant pressure, it is denoted by H
+dq = dE + dW
+(dq)p = dH
+dH = dE + dW
+
+Considering a system would change its enthalpy when the dE would be equal to:
+dE = E2 - E1
+dH = H2 - H1
+dW = P2V2 - P1V1
+
+H1 = E1 + P1V1
+H2 = E2 + P2V2
+
+dH = E2 + P2V2 - E1 + P1V1
+dH = (E2 - E1) + (P2V2 - P1V1)
+
+
+Example
+A) Write down the various unit of expressing work done in a system.
+B) A gas expands against the constant pressure of 2.5 atm from 5L to 25L by absorbing 1260 J of heat. Calculate the change in the internal energy of the system.
+Solution:
+A) Nm - Newton Metre
+Kgm^2 - Kilogram Meter Square
+J - Joule
+
+B) V1 = 5 Liters
+V2 = 25 Liters
+P = 2.5 x 101325 = 253,312.5
+dH = 1260 J
+dH = dE + dW
+W = P(V2 - V1)
+dH = dE + P(V2-V1)
+
+W = 252,312.5(25-5)
+W = 5,066,250 J = 5066.25 KJ
+
+1260 = dE + 5066.25
+dE = 1260 - 5066.25
+dE = −3,806.25 KJ
+
+First law and number of moles
+dq = dE + dW
+dq = dE + p dv 
+
+pv = nRT => pdv = RT dN
+dq = dE + RT dN
+W = RT dN
+
+Exercise
+ 1. Calculate the amount of work done when 1.0dm^3 of an ideal gas expands isothermally by reducing the pressure from 1.0 to 0.25 atm
+ 2. Calculate the work done, heat absorbed and change in the internal energy when 4 mole of Nitrogen expands isothermally and reversibly from 15 to 50dm^3 -->
+
+
+<!-- Effective listening is a crucial aspect of communication that involves fully concentrating on and comprehending the message being conveyed. It requires attention, understanding, and interpretation of the speaker's words, tone, and body language.
+
+Types of Listening:
+
+- Active listening: Give the speaker your undivided attention, maintain eye contact, and ask clarifying questions.
+- Empathetic listening: Try to understand the speaker's perspective, emotions, and needs.
+- Critical listening: Analyze and evaluate the information being presented, identifying biases and flaws in reasoning.
+- Reflective listening: Repeat back what you've heard in your own words, ensuring understanding and showing the speaker you value their input.
+
+Benefits of Effective Listening:
+
+- Builds trust and rapport
+- Resolves conflicts and misunderstandings
+- Encourages open communication
+- Increases knowledge and understanding
+- Enhances relationships and collaboration
+- Improves decision-making and problem-solving
+
+Tips to Improve Listening Skills:
+
+- Practice mindfulness and focus
+- Avoid distractions and interruptions
+- Use verbal and nonverbal cues (e.g., nodding, making eye contact)
+- Paraphrase and summarize what you've heard
+- Ask open-ended questions
+- Avoid making assumptions or jumping to conclusions -->
+
+
+
+
+<!-- <p>The momentum <b>B</b> of a body is defined as a product of its mass <b>M</b> and its velocity <b>V</b>. Its unit is N/m<sup>2</sup>. It’s a vector quantity. Mathematically it’s represented as:</p>
+<pre>P = m x v</pre>
+
+<h2>Impulse</h2>
+<p>It’s usually associated with collision. When a body collides with another, it receives an impulse of load. The impulse consists of a large force acting for a very short time. We define impulse as a product of the average force acting on a particle and the time during which it acts. If a force <b>F</b> acts for a very short time <b>t</b>, the impulse <b>I</b> is given by:</p>
+<pre>I = F x t (Ns)</pre>
+
+<h3>Example 1:</h3>
+<p>A stationary ball is hit by an average force of 50N for a time of 0.03s. What’s the impulse experienced by the body?</p>
+<p><b>Solution 1:</b></p>
+<pre>I = F x t
+I = 1.5 Ns</pre>
+
+<h3>Example 2:</h3>
+<p>A body of mass 3.0kg moves with a velocity of 10 m/s. Find the momentum.</p>
+<p><b>Solution 2:</b></p>
+<pre>P = m x v
+P = 3 x 10
+P = 30 kg·m/s</pre>
+
+<h2>Newton’s Laws of Motion</h2>
+<h3>First Law:</h3>
+<p>The first law states that every object continues in its state of rest or uniform motion in a straight line unless acted upon by an external force.</p>
+
+<h3>Second Law:</h3>
+<p>The rate of change of momentum is proportional to the impressed force divided by the time taken.</p>
+<p>Mathematically:</p>
+<pre>F is directly proportional to (change in momentum)/(time taken)
+F = (mv - mu) / t
+F = k m ((v - u) / t)
+but a = (v - u) / t
+F = k m a
+Assuming k = 1
+F = m x a</pre>
+
+<h4>Example:</h4>
+<p>An unbalanced force of 20N acts on a 4.0kg mass. What acceleration does it have?</p>
+<p><b>Solution:</b></p>
+<pre>F = MA
+F/M = a
+a = 20/4
+a = 5 m/s<sup>2</sup></pre>
+
+<h3>Third Law:</h3>
+<p>Action and reaction are equal and opposite.</p>
+<h4>Applications:</h4>
+<ul>
+    <li>Rockets</li>
+    <li>Jet engines</li>
+    <li>Propellers</li>
+    <li>Car brakes</li>
+    <li>Friction</li>
+    <li>Normal force</li>
+    <li>Tension force</li>
+    <li>Thrust</li>
+    <li>Drag</li>
+    <li>Lift</li>
+    <li>Recoil</li>
+    <li>Collision</li>
+    <li>Springs</li>
+    <li>Gym equipment (e.g. pulleys, weights)</li>
+    <li>Bicycle pedals</li>
+</ul>
+
+<h2>Conservation of Linear Momentum</h2>
+<p>The principle of conservation of linear motion can be stated in different ways:</p>
+<ul>
+    <li>In any system of colliding objects, the total momentum is always conserved provided that there is no net external force acting on the system.</li>
+    <li>If two or more bodies collide in a closed system, the total momentum after the collision is equal to the total momentum before the collision.</li>
+</ul>
+
+<h3>Closed System</h3>
+<p>A closed system is a system which does not allow the passage of matter into the system. Consider the bodies <b>A</b> and <b>B</b> of masses <b>M<sub>a</sub></b> and <b>M<sub>b</sub></b> moving towards each other with velocities <b>U<sub>a</sub></b> and <b>U<sub>b</sub></b> respectively. Let the acceleration of <b>A</b> be <b>A<sub>a</sub></b> and that of <b>B</b> be <b>A<sub>b</sub></b>. When the two bodies collide, from Newton's third law of motion, we have:</p>
+<pre>F<sub>a</sub> = F<sub>b</sub></pre>
+<p>From Newton's second law:</p>
+<pre>M<sub>a</sub>A<sub>a</sub> = M<sub>b</sub>A<sub>b</sub>
+Recall that a = (v - u) / t
+
+M<sub>a</sub>((v - u) / t) = M<sub>b</sub>((v - u) / t)
+
+dividing both sides by t
+
+M<sub>a</sub>V - M<sub>a</sub>U = -(M<sub>b</sub>V - M<sub>b</sub>U)
+M<sub>a</sub>V - M<sub>b</sub>U = M<sub>b</sub>V + M<sub>a</sub>U</pre> -->
+
+<!-- Nkenke Akuko Banyere Ndi Igbo:
+When you’re talking about the Igbo tribe, it’s language is amongst the 3 major speaking languages in Nigeria. Their tribe is very exceptional. Nigeria is in West Africa. The Igbo tribe is located in the south-eastern part of Nigeria and Igbo is the official language being spoken. The Igbo people have a rich cultural heritage and a strong sense of identity, with a history that dates back centuries. Their language, Igbo, is a member of the Niger-Congo language family and is spoken by millions of people around the world. The Igbo tribe is known for their entrepreneurial spirit, artistic expression, and resilience in the face of adversity.
+
+Image 1 Alt: Eserese Maapu Igbo
+
+Image 2 Alt: Surrounding states of the Igbo land
+
+Over the years they’re have been some controversial discussions about the origin of the Igbo people. It of importance and significance that the Igbo people are found inhabiting in other tribe lands. Despite their significant contributions to Nigerian society, the Igbo people have faced marginalization and discrimination, particularly in the political and economic spheres. The Nigerian civil war, also known as the Biafran War, had a devastating impact on the Igbo people and their land, leading to widespread displacement, poverty, and suffering.
+
+Features of an Igbo person:
+ • Food - Nni
+ • Dressing - Akwá
+ • Festival - Iri ji
+ • Name - Afa
+ • Language - Asusu
+ • Greeting - Ekele 
+ • Physical features - Àjàlå
+
+The language of Igbo People:
+    Language is a system of communication consisting of a set of rules, conventions, and symbols used to convey meaning and express thoughts, ideas, and experiences. Our ability to communicate differentiate us from animals. It’s through the language one speaks that one is being identified with his/her tribe. The Igbo language has many variants spoken across the Igbo land.
+ • *Some parts of Nigeria and their language:*
+ • the Ugu - Hausa, Tiv, Fulani
+ • The south - Yourba, Efik, Igbo, Ibibio etc
+
+ • *Some parts of the world and their language:*
+ • Britain - English 
+ • France - French 
+ • Germany - German
+ • Netherlands - Dutch
+
+Language is being passed form one generation to another that’s why we are being able to witness people speaking it
+Importance of Languages:
+ • Communication 
+ • Trading & commerce -->
+
+
+
+
+
+<!-- <p>Nigeria is located in West Africa and is surrounded/bordered by 4 Francophone countries. Nigeria is an Anglophone country.</p>
+
+<h2>Importance of the French Language:</h2>
+<ul>
+    <li>For communication with our Francophone neighbors and the international community at large</li>
+    <li>French is the second official language in Nigeria according to the Policy on Education (1998)</li>
+    <li>It’s a language for the job market</li>
+    <li>It’s a language for higher education</li>
+    <li>It’s a language of international relations</li>
+    <li>Access to organizations like UN, EU, UNESCO, NATO, WHO, IOC, RED CROSS, North Atlantic Treaty, FIFA, CAF</li>
+    <li>It’s a career (e.g., Translators/Interpreters, Teachers)</li>
+    <li>It’s a language of culture</li>
+    <li>It’s a language of tourism</li>
+</ul>
+
+<p><strong>Assignment:</strong> See and read about the Royal British Coat of Arms.</p> -->
+
+
+
+<!-- 
+
+<h1>Chapter 1</h1>
+<h2>4.) Five Uses of Language by Humans</h2>
+<ol>
+    <li>
+        <strong>Communication</strong>: 
+        Language is used for sharing ideas, emotions, and information both in personal conversations and public forums.
+    </li>
+    <li>
+        <strong>Expression of Identity</strong>: 
+        It reflects cultural and personal identity, allowing individuals to express their cultural heritage and personal affiliations.
+    </li>
+    <li>
+        <strong>Knowledge Transfer and Education</strong>: 
+        Language is essential for formal education and informal learning, facilitating the transmission of knowledge across generations.
+    </li>
+    <li>
+        <strong>Social Interaction and Relationships</strong>: 
+        It helps in building, maintaining, and strengthening relationships and resolving conflicts through dialogue.
+    </li>
+    <li>
+        <strong>Creative and Artistic Expression</strong>: 
+        Language is the medium for literature, poetry, theater, music, and cinema, allowing for the expression of complex thoughts and emotions.
+    </li>
+</ol>
+
+<h2>6a.)</h2>
+<ol>
+    <li>Listening</li>
+    <li>Speaking</li>
+    <li>Reading</li>
+    <li>Writing</li>
+    <li>Grammar</li>
+</ol>
+
+<h2>6b.)</h2>
+<ul>
+    <li><strong>Listening and Speaking</strong>: Listening to spoken language helps improve pronunciation, intonation, and fluency in speaking.</li>
+    <li><strong>Reading and Writing</strong>: Reading exposes individuals to various writing styles and vocabulary, which enhances their writing skills.</li>
+    <li><strong>Listening and Reading</strong>: Both involve comprehension skills; listening comprehension aids in understanding spoken language, while reading comprehension aids in understanding written texts.</li>
+    <li><strong>Speaking and Writing</strong>: Both are productive skills that require the use of correct grammar and vocabulary to effectively convey messages.</li>
+    <li><strong>Grammar</strong>: Knowledge of grammar underpins all four skills (listening, speaking, reading, and writing) by providing the rules and structure needed to construct meaningful sentences.</li>
+</ul>
+
+
+<h1>Chapter 2</h1>
+<h2>3.)</h2>
+
+<h5>Case 1</h5>
+<p>Immersing oneself in the language daily helps improve proficiency through consistent practice and exposure. Reading English books, newspapers, and online articles enhances vocabulary and comprehension skills. Listening to English podcasts, watching English movies, and following English news channels improves listening skills and understanding of different accents. Practicing speaking English with native speakers or language partners, participating in English conversation clubs, and using language learning apps helps improve fluency and pronunciation.</p>
+
+<h5>Case 2</h5>
+<p>Engaging in structured learning environments provides guided instruction and feedback, which are essential for improvement. Enrolling in English courses at language schools, community colleges, or online platforms offers formal instruction and practice. Working with a private tutor provides personalized lessons and feedback tailored to individual needs. Regular assessments and quizzes track progress and identify areas needing improvement.</p>
+
+<h5>Case 3</h5>
+<p>Leveraging technology and various resources provides interactive and engaging ways to enhance language skills. Language learning apps like Duolingo, Babbel, and Rosetta Stone offer practice in vocabulary, grammar, and pronunciation through gamified learning. Joining online forums and communities like Reddit's r/EnglishLearning or language exchange websites allows practice with others and insights from native speakers. Educational websites and tools like BBC Learning English, Grammarly, and Merriam-Webster offer additional learning materials, grammar checks, and vocabulary expansion.</p>
+
+
+<h2>4.) </h2>
+<h1>Importance of the Course "Use of English" in Nigerian Universities</h1>
+
+<h5>(Case 1)</h5>
+<p>The course "Use of English" in Nigerian universities plays a crucial role in enhancing students' communication skills. It focuses on improving proficiency in reading, writing, speaking, and listening in English. Through structured lessons and exercises, students learn how to express themselves effectively, use correct grammar and vocabulary, and understand various forms of written and spoken English.</p>
+
+<h5>(Case 2)</h5>
+<p>Successfully completing the "Use of English" course is often a requirement for progression and graduation in Nigerian universities. It prepares students for academic success by equipping them with essential language skills needed to excel in other courses and academic activities. This includes writing essays, reports, and research papers, participating in class discussions, and presenting findings in a clear and coherent manner.</p>
+
+<h5>(Case 3)</h5>
+<p>Proficiency in English, fostered through the "Use of English" course, enhances students' career opportunities. In Nigeria, where English is the official language of business, government, and international relations, strong language skills are highly valued by employers. Students who excel in the course are better prepared for job interviews, professional communication, and career advancement in various fields such as education, business, law, and media.</p>
+
+
+
+<h1>Chapter 3</h1>
+<h2>2.) </h2>
+<em><b>Note: </b>pick 5</em>
+<ol>
+    <li><strong>Procrastination:</strong> Students often delay tasks or assignments, leading to last-minute rushes and poor time management. This can be due to lack of motivation, fear of failure, or difficulty in prioritizing tasks.</li>
+
+    <li><strong>Overcommitment:</strong> Students may take on too many activities or responsibilities, such as extracurriculars, part-time jobs, or social commitments, leaving little time for academic work. This results in time constraints and difficulty in balancing competing demands.</li>
+
+    <li><strong>Distractions:</strong> Technology, social media, and entertainment can easily distract students from their study schedules. Constant notifications, online browsing, and gaming can consume valuable study time, affecting productivity and focus.</li>
+
+    <li><strong>Poor Planning:</strong> Inadequate planning or failing to create a realistic study schedule can lead to inefficient use of time. Without clear goals and deadlines, students may struggle to prioritize tasks effectively and allocate sufficient time for each.</li>
+
+    <li><strong>Perfectionism:</strong> Striving for perfection in every task can result in spending excessive time on details or revising work unnecessarily. This perfectionist approach may lead to anxiety, indecision, and inefficient time management.</li>
+
+    <li><strong>Health Issues:</strong> Physical and mental health problems, such as fatigue, stress, or illness, can disrupt students' ability to manage their time effectively. Poor health reduces productivity, motivation, and the capacity to focus on academic tasks.</li>
+
+    <li><strong>Problems with Prioritization:</strong> Difficulty in identifying and prioritizing important tasks over less significant ones can lead to time mismanagement. Students may spend time on less critical activities while neglecting urgent assignments or deadlines.</li>
+</ol>
+
+
+<h2>5.)</h2>
+<p><em>do it yourself</em></p>
+
+<h2>10.)</h2>
+<p><b>Note: <em>Pick 10</em></b></p>
+<ul>
+    <li>Colour (British) / Color (American)</li>
+    <li>Centre (British) / Center (American)</li>
+    <li>Organisation (British) / Organization (American)</li>
+    <li>Favourite (British) / Favorite (American)</li>
+    <li>Travelling (British) / Traveling (American)</li>
+    <li>Defence (British) / Defense (American)</li>
+    <li>Neighbour (British) / Neighbor (American)</li>
+    <li>Theatre (British) / Theater (American)</li>
+    <li>Realise (British) / Realize (American)</li>
+    <li>Programme (British) / Program (American)</li>
+    <li>Plough (British) / Plow (American)</li>
+    <li>Aluminium (British) / Aluminum (American)</li>
+    <li>Enquiry (British) / Inquiry (American)</li>
+    <li>Dialogue (British) / Dialog (American)</li>
+    <li>Specialise (British) / Specialize (American)</li>
+    <li>Litre (British) / Liter (American)</li>
+    <li>Pyjamas (British) / Pajamas (American)</li>
+    <li>Harbour (British) / Harbor (American)</li>
+    <li>Organise (British) / Organize (American)</li>
+    <li>Behaviour (British) / Behavior (American)</li>
+</ul>
+
+
+
+
+<h1>Chapter 4</h1>
+<h2>2.)</h2>
+<p><b>Note: </b><em>pick 1</em></p>
+<ul>
+    <li>
+        <h3>To understand instructions accurately in educational settings:</h3>
+        <p>Effective listening in classrooms or educational environments is crucial for students to grasp instructions, lectures, and assignments accurately. It enables them to follow academic content, comprehend complex concepts, and execute tasks effectively. By actively listening, students can clarify doubts, engage in discussions, and participate meaningfully in learning activities, thereby enhancing their academic performance.</p>
+    </li>
+    <li>
+        <h3>To gather information effectively during professional meetings or conferences:</h3>
+        <p>In professional settings, listening plays a vital role in gathering information, understanding business strategies, and making informed decisions. During meetings, conferences, or negotiations, effective listening ensures that professionals comprehend discussions, grasp key points, and align with organizational goals. It enables them to contribute meaningfully to discussions, collaborate efficiently with colleagues, and execute tasks aligned with business objectives.</p>
+    </li>
+    <li>
+        <h3>To empathetically engage and provide support in personal conversations or counseling sessions:</h3>
+        <p>Listening with empathy is essential in personal interactions, such as conversations with friends, family members, or in counseling sessions. Empathetic listening involves understanding others' emotions, perspectives, and concerns without judgment. It fosters trust, strengthens relationships, and enhances communication by demonstrating genuine interest and validating others' feelings. Effective listening in personal contexts promotes mutual understanding, conflict resolution, and emotional support, contributing to healthier and more fulfilling interpersonal relationships.</p>
+    </li>
+</ul>
+
+
+
+
+<h2>6.)</h2>
+<p><b>Note: </b> <em>pick 1</em></p>
+<ul>
+    <li>
+        <h3>Develop Active Listening Skills:</h3>
+        <p>Practice active listening by focusing entirely on the speaker, maintaining eye contact, and avoiding distractions such as checking your phone or thinking about other tasks.</p>
+    </li>
+    <li>
+        <h3>Cultivate Patience and Open-mindedness:</h3>
+        <p>Be patient and open-minded while listening, allowing the speaker to express their thoughts fully before forming responses or judgments. This promotes a deeper understanding of the speaker's message.</p>
+    </li>
+    <li>
+        <h3>Ask Clarifying Questions:</h3>
+        <p>Clarify any points that are unclear by asking thoughtful questions. This not only demonstrates your engagement but also ensures accurate comprehension of the information being conveyed.</p>
+    </li>
+    <li>
+        <h3>Practice Reflective Listening:</h3>
+        <p>Reflect back on what you've heard by summarizing key points and repeating them in your own words. This helps reinforce understanding and shows the speaker that you are actively listening.</p>
+    </li>
+    <li>
+        <h3>Seek Feedback:</h3>
+        <p>Request feedback from others on your listening skills to identify areas for improvement. Use this feedback to adjust your listening approach and enhance your ability to comprehend and respond effectively.</p>
+    </li>
+</ul> -->
+
+
+
+
+
+
+
+<!-- <style>
+.container { background-color: #fff; display: flex; padding-top: 49px; flex-direction: column; align-items: center; }
+.content-wrapper { width: 100%; max-width: 1306px; }
+@media (max-width: 991px) { .content-wrapper { max-width: 100%; } }
+.two-column-layout { gap: 20px; display: flex; }
+@media (max-width: 991px) { .two-column-layout { flex-direction: column; align-items: stretch; gap: 0; } }
+.left-column { display: flex; flex-direction: column; line-height: normal; width: 50%; margin-left: 0; }
+@media (max-width: 991px) { .left-column { width: 100%; } }
+.nav-container { display: flex; flex-grow: 1; flex-direction: column; }
+@media (max-width: 991px) { .nav-container { max-width: 100%; margin-top: 40px; } }
+.nav-menu { display: flex; align-items: start; gap: 20px; font-size: 16px; color: #000; font-weight: 500; justify-content: space-between; }
+@media (max-width: 991px) { .nav-menu { flex-wrap: wrap; } }
+.logo { aspect-ratio: 4.17; object-fit: auto; object-position: center; width: 248px; align-self: stretch; }
+.nav-item { font-family: Lato, sans-serif; margin-top: 14px; }
+.hero-content { display: flex; margin-top: 107px; flex-direction: column; padding: 0 32px; }
+@media (max-width: 991px) { .hero-content { max-width: 100%; margin-top: 40px; padding: 0 20px; } }
+.hero-subtitle { color: #2a69b3; font: 600 24px Lato, sans-serif; }
+@media (max-width: 991px) { .hero-subtitle { max-width: 100%; } }
+.hero-title { color: #000; letter-spacing: 0.48px; margin-top: 22px; font: 700 48px Urbanist, sans-serif; }
+@media (max-width: 991px) { .hero-title { max-width: 100%; font-size: 40px; } }
+.hero-description { display: flex; margin-top: 21px; align-items: start; gap: 20px; font-size: 24px; color: #000; font-weight: 400; }
+@media (max-width: 991px) { .hero-description { flex-wrap: wrap; } }
+.icon-wrapper { aspect-ratio: 0.3; object-fit: auto; object-position: center; width: 34px; stroke-width: 3px; stroke: #2a69b3; border: 3px solid #2a69b3; margin-top: 11px; }
+.description-text { font-family: Lato, sans-serif; flex-grow: 1; flex-basis: auto; }
+@media (max-width: 991px) { .description-text { max-width: 100%; } }
+.cta-section { display: flex; margin-top: 57px; flex-direction: column; padding: 0 80px 0 26px; }
+@media (max-width: 991px) { .cta-section { max-width: 100%; margin-top: 40px; padding: 0 20px; } }
+.cta-buttons { align-self: center; display: flex; gap: 20px; justify-content: space-between; }
+.primary-button { border-radius: 5px; background-color: #2a69b3; width: 190px; height: 60px; }
+.secondary-button { border-radius: 5px; border: 2px solid #2a69b3; background-color: #fff; width: 190px; height: 60px; }
+.stats-container { margin-top: 50px; width: 100%; }
+@media (max-width: 991px) { .stats-container { max-width: 100%; margin-top: 40px; } }
+.stats-row { gap: 20px; display: flex; }
+@media (max-width: 991px) { .stats-row { flex-direction: column; align-items: stretch; gap: 0; } }
+.stats-box { border-radius: 9px; background-color: #ebecf2; display: flex; width: 100%; flex-grow: 1; align-items: start; gap: 20px; justify-content: space-between; padding: 15px 12px; }
+@media (max-width: 991px) { .stats-box { margin-top: 24px; } }
+.stats-bars { display: flex; gap: 5px; }
+.bar-1 { background-color: #2a69b3; align-self: start; margin-top: 16px; width: 18px; height: 46px; }
+.bar-2 { background-color: #c2daf1; align-self: end; margin-top: 32px; width: 18px; height: 30px; }
+.bar-3 { background-color: #2a69b3; width: 18px; height: 62px; }
+.stats-text { display: flex; margin-top: 5px; flex-direction: column; font-size: 16px; color: #000; font-weight: 500; }
+.stats-number { font-family: Lato, sans-serif; }
+.stats-label { color: #454545; margin-top: 10px; font: 700 8px Lato, sans-serif; }
+.right-column { display: flex; flex-direction: column; line-height: normal; width: 50%; margin-left: 20px; }
+@media (max-width: 991px) { .right-column { width: 100%; } }
+.join-box { border-radius: 9px; background-color: #ebecf2; display: flex; flex-grow: 1; flex-direction: column; font-size: 14px; color: #454545; font-weight: 600; width: 100%; padding: 14px 21px 26px; }
+@media (max-width: 991px) { .join-box { margin-top: 24px; padding: 0 20px; } }
+.join-text { font-family: Lato, sans-serif; }
+.join-image { aspect-ratio: 3.7; object-fit: auto; object-position: center; width: 167px; margin-top: 10px; }
+.hero-image { aspect-ratio: 0.9; object-fit: auto; object-position: center; width: 100%; margin-top: 33px; flex-grow: 1; }
+@media (max-width: 991px) { .hero-image { max-width: 100%; margin-top: 40px; } }
+.partners-section { background-color: #191d3a; align-self: stretch; display: flex; margin-top: 100px; width: 100%; flex-direction: column; align-items: center; padding: 62px 60px 26px; }
+@media (max-width: 991px) { .partners-section { max-width: 100%; margin-top: 40px; padding: 0 20px; } }
+.partners-content { display: flex; width: 100%; max-width: 1077px; flex-direction: column; }
+@media (max-width: 991px) { .partners-content { max-width: 100%; } }
+.partners-title { color: #fff; align-self: center; font: 500 24px Lato, sans-serif; }
+@media (max-width: 991px) { .partners-title { max-width: 100%; } }
+.partners-logos { margin-top: 30px; }
+@media (max-width: 991px) { .partners-logos { max-width: 100%; } }
+.logo-row { gap: 20px; display: flex; }
+@media (max-width: 991px) { .logo-row { flex-direction: column; align-items: stretch; gap: 0; } }
+.logo-column { display: flex; flex-direction: column; line-height: normal; width: 23%; margin-left: 0; }
+@media (max-width: 991px) { .logo-column { width: 100%; } }
+.logo-text { color: #fff; align-self: stretch; margin: auto 0; font: 400 36px Hammersmith One, sans-serif; }
+@media (max-width: 991px) { .logo-text { margin-top: 40px; } }
+.logo-column-2 { display: flex; flex-direction: column; line-height: normal; width: 20%; margin-left: 20px; }
+@media (max-width: 991px) { .logo-column-2 { width: 100%; } }
+.logo-column-3 { display: flex; flex-direction: column; line-height: normal; width: 34%; margin-left: 20px; }
+@media (max-width: 991px) { .logo-column-3 { width: 100%; } }
+.logo-with-text { display: flex; flex-grow: 1; gap: 0; color: #fff; }
+@media (max-width: 991px) { .logo-with-text { margin-top: 40px; } }
+.logo-image { aspect-ratio: 0.6; object-fit: auto; object-position: center; width: 85px; }
+.logo-details { display: flex; flex-direction: column; margin: auto 0; }
+.logo-name { font: 400 36px Hammersmith One, sans-serif; }
+.logo-tagline { align-self: end; margin-top: 8px; font: 500 8px Lato, sans-serif; }
+.logo-column-4 { display: flex; flex-direction: column; line-height: normal; width: 23%; margin-left: 20px; }
+@media (max-width: 991px) { .logo-column-4 { width: 100%; } }
+.logo-with-text-2 { display: flex; gap: 1px; align-self: stretch; color: #fff; margin: auto 0; }
+@media (max-width: 991px) { .logo-with-text-2 { margin-top: 40px; } }
+.logo-image-2 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 56px; }
+.logo-details-2 { align-self: start; display: flex; margin-top: 11px; flex-direction: column; }
+.logo-name-2 { font: 400 36px Hammersmith One, sans-serif; }
+.logo-tagline-2 { align-self: end; margin-top: 7px; font: 500 8px Lato, sans-serif; }
+.stats-section { margin-top: 60px; width: 100%; max-width: 1269px; }
+@media (max-width: 991px) { .stats-section { max-width: 100%; margin-top: 40px; } }
+.stats-row-2 { gap: 20px; display: flex; }
+@media (max-width: 991px) { .stats-row-2 { flex-direction: column; align-items: stretch; gap: 0; } }
+.stats-title { color: #000; margin-top: 19px; font: 600 48px Urbanist, sans-serif; }
+@media (max-width: 991px) { .stats-title { max-width: 100%; margin-top: 40px; font-size: 40px; } }
+.stats-column-2 { display: flex; flex-direction: column; line-height: normal; width: 50%; margin-left: 20px; }
+@media (max-width: 991px) { .stats-column-2 { width: 100%; } }
+.stats-description { color: #454545; font: 400 24px Lato, sans-serif; }
+@media (max-width: 991px) { .stats-description { max-width: 100%; margin-top: 40px; } }
+.features-section { margin-top: 88px; width: 100%; max-width: 1280px; padding: 0 20px; }
+@media (max-width: 991px) { .features-section { max-width: 100%; margin-top: 40px; } }
+.features-row { gap: 20px; display: flex; }
+@media (max-width: 991px) { .features-row { flex-direction: column; align-items: stretch; gap: 0; } }
+.feature-column { display: flex; flex-direction: column; line-height: normal; width: 33%; margin-left: 0; }
+@media (max-width: 991px) { .feature-column { width: 100%; } }
+.feature-box { border-radius: 16px; background-color: #191d3a; display: flex; width: 100%; flex-direction: column; font-size: 20px; color: #fff; margin: 0 auto; padding: 24px 24px 37px; }
+@media (max-width: 991px) { .feature-box { margin-top: 24px; padding: 0 20px; } }
+.feature-icon { aspect-ratio: 1; object-fit: auto; object-position: center; width: 60px; background-color: #191d3a; border-radius: 50%; height: 60px; }
+.feature-title { margin-top: 44px; font: 600 24px Lato, sans-serif; }
+@media (max-width: 991px) { .feature-title { margin-top: 40px; } }
+.feature-description { font-family: Lato, sans-serif; font-weight: 400; margin-top: 45px; }
+@media (max-width: 991px) { .feature-description { margin-top: 40px; } }
+.feature-link { display: flex; margin-top: 28px; gap: 12px; font-weight: 500; }
+@media (max-width: 991px) { .feature-link { padding-right: 20px; } }
+.link-text { font-family: Lato, sans-serif; flex-grow: 1; flex-basis: auto; margin: auto 0; }
+.link-icon { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.feature-column-2 { display: flex; flex-direction: column; line-height: normal; width: 33%; margin-left: 20px; }
+@media (max-width: 991px) { .feature-column-2 { width: 100%; } }
+.feature-box-2 { border-radius: 16px; background-color: #2a69b3; display: flex; width: 100%; flex-direction: column; font-size: 20px; color: #fff; margin: 0 auto; padding: 34px 24px; }
+@media (max-width: 991px) { .feature-box-2 { margin-top: 24px; padding: 0 20px; } }
+.feature-icon-2 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 48px; }
+.feature-title-2 { margin-top: 50px; font: 600 24px Lato, sans-serif; }
+@media (max-width: 991px) { .feature-title-2 { margin-top: 40px; } }
+.feature-description-2 { font-family: Lato, sans-serif; font-weight: 400; margin-top: 45px; }
+@media (max-width: 991px) { .feature-description-2 { margin-top: 40px; } }
+.feature-link-2 { display: flex; margin-top: 28px; gap: 12px; font-weight: 500; }
+@media (max-width: 991px) { .feature-link-2 { padding-right: 20px; } }
+.link-text-2 { font-family: Lato, sans-serif; flex-grow: 1; flex-basis: auto; margin: auto 0; }
+.link-icon-2 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.feature-column-3 { display: flex; flex-direction: column; line-height: normal; width: 33%; margin-left: 20px; }
+@media (max-width: 991px) { .feature-column-3 { width: 100%; } }
+.feature-box-3 { border-radius: 16px; background-color: #ebecf2; display: flex; width: 100%; flex-grow: 1; flex-direction: column; font-size: 20px; color: #000; margin: 15px auto 0; padding: 24px 24px 52px; }
+@media (max-width: 991px) { .feature-box-3 { margin-top: 39px; padding: 0 20px; } }
+.feature-icon-3 { background-color: #191d3a; border-radius: 50%; width: 60px; height: 60px; }
+.feature-title-3 { margin-top: 29px; font: 600 24px Lato, sans-serif; }
+.feature-description-3 { font-family: Lato, sans-serif; font-weight: 400; margin-top: 45px; }
+@media (max-width: 991px) { .feature-description-3 { margin-top: 40px; } }
+.feature-link-3 { display: flex; margin-top: 28px; gap: 12px; font-weight: 500; }
+@media (max-width: 991px) { .feature-link-3 { padding-right: 20px; } }
+.link-text-3 { font-family: Lato, sans-serif; flex-grow: 1; flex-basis: auto; margin: auto 0; }
+.link-icon-3 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.features-title { color: #000; margin-top: 72px; font: 700 48px Urbanist, sans-serif; }
+@media (max-width: 991px) { .features-title { margin-top: 40px; font-size: 40px; } }
+.feature-highlight { margin-top: 65px; width: 100%; max-width: 1261px; }
+@media (max-width: 991px) { .feature-highlight { max-width: 100%; margin-top: 40px; } }
+.highlight-row { gap: 20px; display: flex; }
+@media (max-width: 991px) { .highlight-row { flex-direction: column; align-items: stretch; gap: 0; } }
+.highlight-image { aspect-ratio: 1.18; object-fit: auto; object-position: center; width: 100%; flex-grow: 1; }
+@media (max-width: 991px) { .highlight-image { max-width: 100%; margin-top: 40px; } }
+.highlight-column { display: flex; flex-direction: column; line-height: normal; width: 50%; margin-left: 20px; }
+@media (max-width: 991px) { .highlight-column { width: 100%; } }
+.highlight-content { display: flex; margin-top: 74px; flex-direction: column; padding: 0 20px; }
+@media (max-width: 991px) { .highlight-content { max-width: 100%; margin-top: 40px; } }
+.highlight-title { color: #000; font: 600 48px Urbanist, sans-serif; }
+@media (max-width: 991px) { .highlight-title { max-width: 100%; font-size: 40px; } }
+.highlight-description { color: #454545; margin-top: 30px; font: 400 24px Lato, sans-serif; }
+@media (max-width: 991px) { .highlight-description { max-width: 100%; } }
+.highlight-cta { border-radius: 5px; background-color: #2a69b3; align-self: start; display: flex; margin-top: 26px; gap: 12px; font-size: 20px; color: #fff; font-weight: 500; padding: 18px 31px; }
+@media (max-width: 991px) { .highlight-cta { padding: 0 20px; } }
+.cta-text { font-family: Lato, sans-serif; flex-grow: 1; flex-basis: auto; margin: auto 0; }
+.cta-icon { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.stats-section-2 { background-color: #ebecf2; align-self: stretch; display: flex; margin-top: 135px; width: 100%; align-items: center; justify-content: center; padding: 80px 60px; }
+@media (max-width: 991px) { .stats-section-2 { max-width: 100%; margin-top: 40px; padding: 0 20px; } }
+.stats-content { display: flex; margin-bottom: 18px; width: 100%; max-width: 1143px; flex-direction: column; }
+@media (max-width: 991px) { .stats-content { max-width: 100%; } }
+.stats-heading { color: #191d3a; align-self: center; font: 600 48px Urbanist, sans-serif; }
+@media (max-width: 991px) { .stats-heading { max-width: 100%; font-size: 40px; } }
+.stats-grid { margin-top: 96px; }
+@media (max-width: 991px) { .stats-grid { max-width: 100%; margin-top: 40px; } }
+.stats-row-3 { gap: 20px; display: flex; }
+@media (max-width: 991px) { .stats-row-3 { flex-direction: column; align-items: stretch; gap: 0; } }
+.stat-column { display: flex; flex-direction: column; line-height: normal; width: 25%; margin-left: 0; }
+@media (max-width: 991px) { .stat-column { width: 100%; } }
+.stat-circle { border-radius: 50%; border: 2px solid #2a69b3; background-color: #ebecf2; display: flex; margin-top: 63px; flex-direction: column; color: #000; width: 100%; padding: 80px 60px; }
+@media (max-width: 991px) { .stat-circle { margin-top: 40px; padding: 0 20px; } }
+.stat-number { align-self: center; margin-top: 16px; font: 600 52px Lato, sans-serif; }
+@media (max-width: 991px) { .stat-number { font-size: 40px; } }
+.stat-text { text-align: center; margin-top: 37px; font: 400 20px Lato, sans-serif; }
+.stat-column-2 { display: flex; flex-direction: column; line-height: normal; width: 25%; margin-left: 20px; }
+@media (max-width: 991px) { .stat-column-2 { width: 100%; } }
+.stat-circle-2 { border-radius: 50%; background-color: #2a69b3; display: flex; flex-direction: column; color: #fff; width: 100%; padding: 80px 60px; }
+@media (max-width: 991px) { .stat-circle-2 { padding: 0 20px; } }
+.stat-number-2 { align-self: center; margin-top: 16px; font: 600 52px Lato, sans-serif; }
+@media (max-width: 991px) { .stat-number-2 { font-size: 40px; } }
+.stat-text-2 { text-align: center; margin-top: 37px; font: 400 20px Lato, sans-serif; }
+.stat-column-3 { display: flex; flex-direction: column; line-height: normal; width: 25%; margin-left: 20px; }
+@media (max-width: 991px) { .stat-column-3 { width: 100%; } }
+.stat-circle-3 { border-radius: 50%; border: 2px solid #2a69b3; background-color: #ebecf2; display: flex; margin-top: 63px; flex-direction: column; color: #000; width: 100%; padding: 80px 60px; }
+@media (max-width: 991px) { .stat-circle-3 { margin-top: 40px; padding: 0 20px; } }
+.stat-number-3 { align-self: center; margin-top: 16px; font: 600 52px Lato, sans-serif; }
+@media (max-width: 991px) { .stat-number-3 { font-size: 40px; } }
+.stat-text-3 { text-align: center; margin-top: 37px; font: 400 20px Lato, sans-serif; }
+.stat-column-4 { display: flex; flex-direction: column; line-height: normal; width: 25%; margin-left: 20px; }
+@media (max-width: 991px) { .stat-column-4 { width: 100%; } }
+.stat-circle-4 { border-radius: 50%; background-color: #191d3a; display: flex; flex-direction: column; color: #fff; width: 100%; padding: 80px 60px; }
+@media (max-width: 991px) { .stat-circle-4 { padding: 0 20px; } }
+.stat-number-4 { align-self: center; margin-top: 16px; font: 600 52px Lato, sans-serif; }
+@media (max-width: 991px) { .stat-number-4 { font-size: 40px; } }
+.stat-text-4 { text-align: center; margin-top: 37px; font: 400 20px Lato, sans-serif; }
+.services-section { margin-top: 199px; width: 100%; max-width: 1284px; }
+@media (max-width: 991px) { .services-section { max-width: 100%; margin-top: 40px; } }
+.services-row { gap: 20px; display: flex; }
+@media (max-width: 991px) { .services-row { flex-direction: column; align-items: stretch; gap: 0; } }
+.services-content { display: flex; margin-top: 7px; flex-direction: column; padding: 0 20px; }
+@media (max-width: 991px) { .services-content { max-width: 100%; margin-top: 40px; } }
+.services-title { color: #000; font: 600 48px Urbanist, sans-serif; }
+@media (max-width: 991px) { .services-title { max-width: 100%; font-size: 40px; } }
+.services-description { color: #454545; margin-top: 38px; font: 400 24px Lato, sans-serif; }
+@media (max-width: 991px) { .services-description { max-width: 100%; } }
+.services-column { display: flex; flex-direction: column; line-height: normal; width: 50%; margin-left: 20px; }
+@media (max-width: 991px) { .services-column { width: 100%; } }
+.services-wrapper { display: flex; flex-grow: 1; flex-direction: column; }
+@media (max-width: 991px) { .services-wrapper { max-width: 100%; margin-top: 40px; } }
+.service-box { display: flex; flex-direction: column; position: relative; overflow: hidden; align-self: end; min-height: 150px; width: 504px; max-width: 100%; align-items: end; color: #000; justify-content: center; padding: 35px 60px; font: 400 24px Lato, sans-serif; }
+@media (max-width: 991px) { .service-box { padding: 0 30px 0 20px; } }
+.service-bg { position: absolute; inset: 0; height: 100%; width: 100%; object-fit: cover; object-position: center; }
+.service-text { position: relative; }
+.service-card { border-radius: 10px; box-shadow: 2px 7px 15px 0 rgba(111, 111, 111, 0.1); background-color: #fff; margin-top: 30px; padding: 35px 28px; }
+@media (max-width: 991px) { .service-card { max-width: 100%; padding: 0 20px; } }
+.card-row { gap: 20px; display: flex; }
+@media (max-width: 991px) { .card-row { flex-direction: column; align-items: stretch; gap: 0; } }
+.card-icon-column { display: flex; flex-direction: column; line-height: normal; width: 16%; margin-left: 0; }
+@media (max-width: 991px) { .card-icon-column { width: 100%; } }
+.card-icon { aspect-ratio: 1; object-fit: auto; object-position: center; width: 80px; border-radius: 10px; }
+@media (max-width: 991px) { .card-icon { margin-top: 40px; } }
+.card-text-column { display: flex; flex-direction: column; line-height: normal; width: 84%; margin-left: 20px; }
+@media (max-width: 991px) { .card-text-column { width: 100%; } }
+.card-text { color: #000; align-self: stretch; margin: auto 0; font: 400 24px Lato, sans-serif; }
+@media (max-width: 991px) { .card-text { max-width: 100%; margin-top: 40px; } }
+.cta-container { display: flex; margin-top: 21px; width: 100%; max-width: 1280px; align-items: start; gap: 20px; }
+@media (max-width: 991px) { .cta-container { max-width: 100%; flex-wrap: wrap; } }
+.cta-button { border-radius: 5px; background-color: #2a69b3; display: flex; gap: 13px; font-size: 20px; color: #fff; font-weight: 500; padding: 18px 30px; }
+@media (max-width: 991px) { .cta-button { padding: 0 20px; } }
+.cta-text { font-family: Lato, sans-serif; flex-grow: 1; margin: auto 0; }
+.cta-icon { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.service-card-2 { border-radius: 10px; box-shadow: 2px 7px 15px 0 rgba(111, 111, 111, 0.1); background-color: #fff; margin-top: 9px; flex-grow: 1; flex-basis: auto; padding: 35px 24px; }
+@media (max-width: 991px) { .service-card-2 { max-width: 100%; padding: 0 20px; } }
+.card-row-2 { gap: 20px; display: flex; }
+@media (max-width: 991px) { .card-row-2 { flex-direction: column; align-items: stretch; gap: 0; } }
+.card-icon-column-2 { display: flex; flex-direction: column; line-height: normal; width: 19%; margin-left: 0; }
+@media (max-width: 991px) { .card-icon-column-2 { width: 100%; } }
+.card-icon-2 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 80px; border-radius: 10px; }
+@media (max-width: 991px) { .card-icon-2 { margin-top: 40px; } }
+.card-text-column-2 { display: flex; flex-direction: column; line-height: normal; width: 81%; margin-left: 20px; }
+@media (max-width: 991px) { .card-text-column-2 { width: 100%; } }
+.card-text-2 { color: #000; align-self: stretch; margin: auto 0; font: 400 24px Lato, sans-serif; }
+@media (max-width: 991px) { .card-text-2 { margin-top: 40px; } }
+.testimonials-title { color: #000; margin-top: 161px; font: 700 48px Urbanist, sans-serif; }
+@media (max-width: 991px) { .testimonials-title { margin-top: 40px; font-size: 40px; } }
+.testimonials-section { align-self: stretch; display: flex; margin-top: 144px; width: 100%; flex-direction: column; align-items: center; padding: 0 80px; }
+@media (max-width: 991px) { .testimonials-section { max-width: 100%; margin-top: 40px; padding: 0 20px; } }
+.testimonial-container { width: 100%; max-width: 1252px; }
+@media (max-width: 991px) { .testimonial-container { max-width: 100%; } }
+.testimonial-row { gap: 20px; display: flex; }
+@media (max-width: 991px) { .testimonial-row { flex-direction: column; align-items: stretch; gap: 0; } }
+.testimonial-image { aspect-ratio: 0.98; object-fit: auto; object-position: center; width: 100%; margin-top: 16px; flex-grow: 1; }
+@media (max-width: 991px) { .testimonial-image { max-width: 100%; margin-top: 40px; } }
+.testimonial-column { display: flex; flex-direction: column; line-height: normal; width: 50%; margin-left: 20px; }
+@media (max-width: 991px) { .testimonial-column { width: 100%; } }
+.testimonial-content { display: flex; flex-direction: column; }
+@media (max-width: 991px) { .testimonial-content { max-width: 100%; margin-top: 40px; } }
+.quote-mark { color: #2a69b3; font: 700 271px Laila, sans-serif; }
+@media (max-width: 991px) { .quote-mark { max-width: 100%; font-size: 40px; } }
+.testimonial-text-wrapper { display: flex; margin-top: 62px; flex-direction: column; font-size: 30px; }
+@media (max-width: 991px) { .testimonial-text-wrapper { max-width: 100%; margin-top: 40px; } }
+.testimonial-text { color: #454545; font-family: Lato, sans-serif; font-weight: 400; }
+@media (max-width: 991px) { .testimonial-text { max-width: 100%; margin-right: 10px; } }
+.testimonial-author { color: #0d0d0d; font-family: Urbanist, sans-serif; font-weight: 700; margin-top: 43px; }
+@media (max-width: 991px) { .testimonial-author { max-width: 100%; margin-top: 40px; } }
+.testimonial-rating { aspect-ratio: 2.38; object-fit: auto; object-position: center; width: 152px; align-self: end; margin-top: 29px; max-width: 100%; }
+.pricing-title { color: #000; text-align: center; margin-top: 158px; font: 600 48px Urbanist, sans-serif; }
+@media (max-width: 991px) { .pricing-title { max-width: 100%; margin-top: 40px; font-size: 40px; } }
+.pricing-subtitle { color: #000; text-align: center; margin-top: 59px; font: 400 24px Lato, sans-serif; }
+@media (max-width: 991px) { .pricing-subtitle { max-width: 100%; margin-top: 40px; } }
+.pricing-grid { margin-top: 133px; width: 100%; max-width: 1140px; }
+@media (max-width: 991px) { .pricing-grid { max-width: 100%; margin-top: 40px; } }
+.pricing-row { gap: 20px; display: flex; }
+@media (max-width: 991px) { .pricing-row { flex-direction: column; align-items: stretch; gap: 0; } }
+.pricing-column { display: flex; flex-direction: column; line-height: normal; width: 33%; margin-left: 0; }
+@media (max-width: 991px) { .pricing-column { width: 100%; } }
+.pricing-card { border-radius: 20px; border: 2px solid #2a69b3; background-color: #ebecf2; display: flex; margin-top: 50px; flex-grow: 1; flex-direction: column; color: #000; text-align: center; width: 100%; padding: 28px 0; }
+@media (max-width: 991px) { .pricing-card { margin-top: 40px; } }
+.plan-name { align-self: center; font: 600 36px Lato, sans-serif; }
+.pricing-divider { border: 1px solid rgba(0, 0, 0, 0.75); background-color: rgba(0, 0, 0, 0.75); margin-top: 18px; height: 1px; }
+.pricing-details { display: flex; margin-top: 5px; flex-direction: column; padding: 0 29px; }
+@media (max-width: 991px) { .pricing-details { padding: 0 20px; } }
+.pricing-item { display: flex; gap: 8px; font-weight: 500; }
+.pricing-icon { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.pricing-label { flex-grow: 1; flex-basis: auto; font: 20px Lato, sans-serif; }
+.pricing-sublabel { margin: auto 0; font: 16px Lato, sans-serif; }
+.pricing-value { letter-spacing: -0.6px; align-self: start; margin: 10px 0 0 34px; font: 700 20px Lato, sans-serif; }
+@media (max-width: 991px) { .pricing-value { margin-left: 10px; } }
+.pricing-item-2 { display: flex; margin-top: 11px; gap: 8px; font-weight: 500; }
+.pricing-icon-2 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.pricing-label-2 { flex-grow: 1; flex-basis: auto; font: 20px Lato, sans-serif; }
+.pricing-sublabel-2 { margin: auto 0; font: 16px Lato, sans-serif; }
+.pricing-value-wrapper { align-self: center; display: flex; margin-top: 10px; gap: 9px; }
+.pricing-value-2 { letter-spacing: -0.6px; font: 700 20px Lato, sans-serif; }
+.pricing-period { flex-grow: 1; flex-basis: auto; margin: auto 0; font: 500 16px Lato, sans-serif; }
+.pricing-item-3 { display: flex; margin-top: 11px; gap: 6px; font-weight: 500; }
+.pricing-icon-3 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.pricing-label-3 { flex-grow: 1; flex-basis: auto; font: 20px Lato, sans-serif; }
+.pricing-sublabel-3 { margin: auto 0; font: 16px Lato, sans-serif; }
+.pricing-value-wrapper-2 { align-self: center; display: flex; margin-top: 10px; gap: 9px; }
+.pricing-value-3 { letter-spacing: -0.6px; font: 700 20px Lato, sans-serif; }
+.pricing-period-2 { flex-grow: 1; flex-basis: auto; margin: auto 0; font: 500 16px Lato, sans-serif; }
+.pricing-divider-2 { border: 1px solid rgba(0, 0, 0, 0.75); background-color: rgba(0, 0, 0, 0.75); margin-top: 5px; height: 1px; }
+.pricing-features { display: flex; margin-top: 9px; flex-direction: column; align-items: start; padding: 0 65px 0 24px; }
+@media (max-width: 991px) { .pricing-features { padding: 0 20px; } }
+.feature-item { display: flex; gap: 18px; }
+.feature-icon { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.feature-text-wrapper { align-self: start; display: flex; margin-top: 5px; gap: 9px; }
+.feature-value { letter-spacing: -0.6px; font: 700 20px Lato, sans-serif; }
+.feature-label { flex-grow: 1; flex-basis: auto; margin: auto 0; font: 500 16px Lato, sans-serif; }
+.feature-item-2 { display: flex; margin-top: 13px; gap: 18px; }
+.feature-icon-2 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.feature-text-wrapper-2 { align-self: start; display: flex; margin-top: 5px; gap: 9px; }
+.feature-value-2 { letter-spacing: -0.6px; flex-grow: 1; font: 700 20px Lato, sans-serif; }
+.feature-label-2 { flex-grow: 1; flex-basis: auto; font: 500 16px Lato, sans-serif; }
+.pricing-cta { border-radius: 29px; border: 3px solid #2a69b3; background-color: #fff; align-self: end; margin-top: 24px; justify-content: center; padding: 22px 41px; font: 500 24px Lato, sans-serif; }
+@media (max-width: 991px) { .pricing-cta { padding: 0 20px; } }
+.pricing-column-2 { display: flex; flex-direction: column; line-height: normal; width: 33%; margin-left: 20px; }
+@media (max-width: 991px) { .pricing-column-2 { width: 100%; } }
+.pricing-card-2 { border-radius: 20px; background-color: #191d3a; display: flex; flex-grow: 1; padding-bottom: 42px; flex-direction: column; color: #fff; text-align: center; width: 100%; }
+@media (max-width: 991px) { .pricing-card-2 { margin-top: 40px; } }
+.popular-tag { border-radius: 29px; background-color: #2a69b3; align-self: center; z-index: 10; margin-top: -20px; white-space: nowrap; justify-content: center; padding: 16px 42px; font: 500 20px Lato, sans-serif; }
+@media (max-width: 991px) { .popular-tag { white-space: initial; padding: 0 20px; } }
+.plan-name-2 { align-self: center; margin-top: 29px; font: 600 36px Lato, sans-serif; }
+.pricing-divider-3 { border: 1px solid #fff; background-color: #fff; margin-top: 18px; height: 1px; }
+.pricing-details-2 { display: flex; margin-top: 32px; flex-direction: column; align-items: start; font-weight: 500; padding: 0 62px 0 24px; }
+@media (max-width: 991px) { .pricing-details-2 { padding: 0 20px; } }
+.pricing-item-4 { display: flex; gap: 9px; }
+.pricing-icon-4 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.pricing-label-4 { flex-grow: 1; flex-basis: auto; font: 20px Lato, sans-serif; }
+.pricing-sublabel-4 { margin: auto 0; font: 16px Lato, sans-serif; }
+.pricing-value-4 { margin: auto 0; font: 18px Lato, sans-serif; }
+.pricing-item-5 { display: flex; margin-top: 20px; gap: 8px; }
+.pricing-icon-5 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.pricing-label-5 { flex-grow: 1; flex-basis: auto; font: 20px Lato, sans-serif; }
+.pricing-sublabel-5 { margin: auto 0; font: 16px Lato, sans-serif; }
+.pricing-divider-4 { border: 1px solid #fff; background-color: #fff; margin-top: 28px; height: 1px; }
+.pricing-features-2 { display: flex; margin-top: 35px; flex-direction: column; align-items: start; padding: 0 75px 0 24px; }
+@media (max-width: 991px) { .pricing-features-2 { padding: 0 20px; } }
+.feature-item-3 { display: flex; gap: 18px; }
+.feature-icon-3 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.feature-text-wrapper-3 { align-self: start; display: flex; margin-top: 5px; gap: 9px; }
+.feature-value-3 { letter-spacing: -0.6px; font: 700 20px Lato, sans-serif; }
+.feature-label-3 { flex-grow: 1; flex-basis: auto; margin: auto 0; font: 500 16px Lato, sans-serif; }
+.feature-item-4 { display: flex; margin-top: 13px; gap: 18px; }
+.feature-icon-4 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.feature-text-wrapper-4 { align-self: start; display: flex; margin-top: 5px; gap: 9px; }
+.feature-value-4 { letter-spacing: -0.6px; flex-grow: 1; font: 700 20px Lato, sans-serif; }
+.feature-label-4 { flex-grow: 1; flex-basis: auto; font: 500 16px Lato, sans-serif; }
+.pricing-cta-2 { border-radius: 29px; background-color: #2a69b3; align-self: end; margin-top: 62px; color: #fff; justify-content: center; padding: 21px 41px; font: 500 24px Lato, sans-serif; }
+@media (max-width: 991px) { .pricing-cta-2 { margin-top: 40px; padding: 0 20px; } }
+.pricing-column-3 { display: flex; flex-direction: column; line-height: normal; width: 33%; margin-left: 20px; }
+@media (max-width: 991px) { .pricing-column-3 { width: 100%; } }
+.pricing-card-3 { border-radius: 20px; background-color: #d9d9d9; display: flex; margin-top: 50px; flex-grow: 1; flex-direction: column; color: #000; text-align: center; width: 100%; padding: 27px 0; }
+@media (max-width: 991px) { .pricing-card-3 { margin-top: 40px; } }
+.plan-name-3 { align-self: center; font: 600 36px Lato, sans-serif; }
+.pricing-divider-5 { border: 1px solid rgba(0, 0, 0, 0.75); background-color: rgba(0, 0, 0, 0.75); margin-top: 24px; height: 1px; }
+.pricing-details-3 { display: flex; margin-top: 31px; flex-direction: column; font-weight: 500; padding: 0 31px; }
+@media (max-width: 991px) { .pricing-details-3 { padding: 0 20px; } }
+.pricing-item-6 { align-self: start; display: flex; margin-left: 14px; gap: 9px; }
+@media (max-width: 991px) { .pricing-item-6 { margin-left: 10px; } }
+.pricing-icon-6 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.pricing-label-6 { flex-grow: 1; flex-basis: auto; font: 20px Lato, sans-serif; }
+.pricing-sublabel-6 { margin: auto 0; font: 16px Lato, sans-serif; }
+.pricing-value-5 { margin: auto 0; font: 18px Lato, sans-serif; }
+.pricing-item-7 { display: flex; margin-top: 20px; gap: 8px; }
+.pricing-icon-7 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.pricing-label-7 { flex-grow: 1; flex-basis: auto; font: 20px Lato, sans-serif; }
+.pricing-sublabel-7 { flex-grow: 1; flex-basis: auto; margin: auto 0; font: 16px Lato, sans-serif; }
+.pricing-divider-6 { border: 1px solid rgba(0, 0, 0, 0.75); background-color: rgba(0, 0, 0, 0.75); margin-top: 36px; height: 1px; }
+.pricing-features-3 { display: flex; margin-top: 32px; flex-direction: column; align-items: start; padding: 0 65px 0 24px; }
+@media (max-width: 991px) { .pricing-features-3 { padding: 0 20px; } }
+.feature-item-5 { display: flex; gap: 18px; }
+.feature-icon-5 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.feature-text-wrapper-5 { align-self: start; display: flex; margin-top: 5px; gap: 9px; }
+.feature-value-5 { letter-spacing: -0.6px; font: 700 20px Lato, sans-serif; }
+.feature-label-5 { flex-grow: 1; flex-basis: auto; margin: auto 0; font: 500 16px Lato, sans-serif; }
+.feature-item-6 { display: flex; margin-top: 13px; gap: 18px; }
+.feature-icon-6 { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+.feature-text-wrapper-6 { align-self: start; display: flex; margin-top: 5px; gap: 9px; }
+.feature-value-6 { letter-spacing: -0.6px; flex-grow: 1; font: 700 20px Lato, sans-serif; }
+.feature-label-6 { flex-grow: 1; flex-basis: auto; font: 500 16px Lato, sans-serif; }
+.pricing-cta-3 { border-radius: 30px; border: 3px solid #5b5b5b; background-color: #fff; align-self: end; margin-top: 53px; justify-content: center; padding: 23px 43px; font: 500 24px Lato, sans-serif; }
+@media (max-width: 991px) { .pricing-cta-3 { margin-top: 40px; padding: 0 20px; } }
+.cta-section { border-radius: 25px; background-color: #2a69b3; align-self: stretch; display: flex; margin-top: 136px; align-items: center; font-size: 48px; color: #fff; font-weight: 600; text-align: center; justify-content: center; padding: 76px 60px; }
+@media (max-width: 991px) { .cta-section { max-width: 100%; margin-top: 40px; font-size: 40px; padding: 0 20px; } }
+.cta-content { display: flex; margin-top: 20px; width: 840px; max-width: 100%; flex-direction: column; }
+@media (max-width: 991px) { .cta-content { font-size: 40px; } }
+.cta-text { font-family: Urbanist, sans-serif; }
+@media (max-width: 991px) { .cta-text { max-width: 100%; font-size: 40px; } }
+.cta-button-2 { border-radius: 10px; background-color: #191d3a; align-self: center; margin-top: 119px; width: 213px; height: 50px; }
+@media (max-width: 991px) { .cta-button-2 { margin-top: 40px; } }
+.floating-icon { aspect-ratio: 1; object-fit: auto; object-position: center; width: 78px; box-shadow: 0 0 5px 3px rgba(111, 111, 111, 0.15); border-radius: 50%; align-self: end; margin: 77px 50px 0 0; }
+@media (max-width: 991px) { .floating-icon { margin: 40px 10px 0 0; } }
+.footer { align-self: stretch; display: flex; width: 100%; flex-direction: column; padding: 0 75px; }
+@media (max-width: 991px) { .footer { max-width: 100%; padding: 0 20px; } }
+.footer-logo { aspect-ratio: 4.17; object-fit: auto; object-position: center; width: 248px; max-width: 100%; }
+.footer-content { align-self: center; display: flex; margin-top: 23px; width: 100%; max-width: 1248px; gap: 20px; }
+@media (max-width: 991px) { .footer-content { max-width: 100%; flex-wrap: wrap; } }
+.footer-text { color: #454545; align-self: start; flex-grow: 1; flex-basis: auto; font: 400 20px Lato, sans-serif; }
+.footer-links { flex-grow: 1; flex-basis: auto; }
+@media (max-width: 991px) { .footer-links { max-width: 100%; } }
+.footer-row { gap: 20px; display: flex; }
+@media (max-width: 991px) { .footer-row { flex-direction: column; align-items: stretch; gap: 0; } }
+.footer-column { display: flex; flex-direction: column; line-height: normal; width: 33%; margin-left: 0; }
+@media (max-width: 991px) { .footer-column { width: 100%; } }
+.footer-link { color: #000; font: 400 24px Lato, sans-serif; }
+@media (max-width: 991px) { .footer-link { margin-top: 40px; } }
+.footer-column-2 { display: flex; flex-direction: column; line-height: normal; width: 33%; margin-left: 20px; }
+@media (max-width: 991px) { .footer-column-2 { width: 100%; } }
+.footer-link-2 { color: #000; font: 400 24px Lato, sans-serif; }
+@media (max-width: 991px) { .footer-link-2 { margin-top: 40px; } }
+.footer-column-3 { display: flex; flex-direction: column; line-height: normal; width: 33%; margin-left: 20px; }
+@media (max-width: 991px) { .footer-column-3 { width: 100%; } }
+.footer-link-3 { color: #000; font: 400 24px Lato, sans-serif; }
+@media (max-width: 991px) { .footer-link-3 { margin-top: 40px; } }
+.footer-bottom { background-color: #2b69b6; align-self: stretch; display: flex; margin-top: 100px; width: 100%; gap: 20px; font-size: 20px; color: #fff; font-weight: 400; padding: 26px 79px; }
+@media (max-width: 991px) { .footer-bottom { max-width: 100%; flex-wrap: wrap; margin-top: 40px; padding: 0 20px; } }
+.footer-company { font-family: Lato, sans-serif; flex-grow: 1; flex-basis: auto; margin: auto 0; }
+.footer-copyright { display: flex; gap: 20px; }
+@media (max-width: 991px) { .footer-copyright { max-width: 100%; flex-wrap: wrap; } }
+.footer-logo-2 { aspect-ratio: 4.17; object-fit: auto; object-position: center; width: 255px; }
+.copyright-text { font-family: Lato, sans-serif; flex-grow: 1; flex-basis: auto; margin: auto 0; }
+</style>
+
+<div class="container">
+  <div class="content-wrapper">
+    <div class="two-column-layout">
+      <div class="left-column">
+        <nav class="nav-container">
+          <div class="nav-menu">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb0f6ca998e9990b7a0eeadb5d59059aef45b61dadb14db091f9228f94c690af?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Logo" class="logo">
+            <a href="#" class="nav-item">How it works</a>
+            <a href="#" class="nav-item">About Us</a>
+            <a href="#" class="nav-item">Blog</a>
+          </div>
+          <div class="hero-content">
+            <div class="hero-subtitle">ITSA</div>
+            <h1 class="hero-title">Welcome to the future of device management</h1>
+          </div>
+          <div class="hero-description">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/fea9fdc4f9d1881e4d8c2c148e99a633a397aaab4889546bb46b6bbc0310deed?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Icon" class="icon-wrapper">
+            <p class="description-text">
+              Introducing Device Health Management Service (DHMS) for efficient device management. Enhance performance and optimize processes to boost productivity.
+            </p>
+          </div>
+          <div class="cta-section">
+            <div class="cta-buttons">
+              <button class="primary-button"></button>
+              <button class="secondary-button"></button>
+            </div>
+            <div class="stats-container">
+              <div class="stats-row">
+                <div class="stats-box">
+                  <div class="stats-bars">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                  </div>
+                  <div class="stats-text">
+                    <div class="stats-number">50+</div>
+                    <div class="stats-label">Professional Technicians</div>
+                    <div class="stats-number">500+</div>
+                    <div class="stats-label">Devices Managed</div>
+                  </div>
+                </div>
+                <div class="join-box">
+                  <div class="join-text">100k + Our people join</div>
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7bea22b6e2eb56c4e4828257334cf8f7c48736209562eaa0f4b7e13f6ef37fa0?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Join illustration" class="join-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="right-column">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b5fa4e3f2a80f74e613c94e5cbd71d6786dd1ed4c073d2b5b2d1c16b3b1ffa31?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Hero image" class="hero-image">
+      </div>
+    </div>
+  </div>
+  <section class="partners-section">
+    <div class="partners-content">
+      <h2 class="partners-title">Trusted by the 1000+ Modern Teams and Organizations</h2>
+      <div class="partners-logos">
+        <div class="logo-row">
+          <div class="logo-column">
+            <div class="logo-text">ZOROM</div>
+          </div>
+          <div class="logo-column-2">
+            <div class="logo-text">DigiBlock</div>
+          </div>
+          <div class="logo-column-3">
+            <div class="logo-with-text">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/aa8acda0aed38f1768d1bc6c0b65982c4fc82aaa8d815b960b7f5b09bc57938c?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Mobo Tech logo" class="logo-image">
+              <div class="logo-details">
+                <div class="logo-name">Mobo Tech</div>
+                <div class="logo-tagline">Experience Tech in a new dimension</div>
+              </div>
+            </div>
+          </div>
+          <div class="logo-column-4">
+            <div class="logo-with-text-2">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b682ab824ab01e7e6a375dd1c81b0f57de2c9febaf2820265d14620aedb7124?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Martino logo" class="logo-image-2">
+              <div class="logo-details-2">
+                <div class="logo-name-2">Martino</div>
+                <div class="logo-tagline-2">Colors of the world</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stats-section">
+    <div class="stats-row-2">
+      <div class="left-column">
+        <h2 class="stats-title">86% of our members get better within 12 weeks</h2>
+      </div>
+      <div class="stats-column-2">
+        <p class="stats-description">
+          Our providers take a hands-on approach to help you see improvement at every step, no matter how severe your symptoms are, just come and we will take it from there.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="features-section">
+    <div class="features-row">
+      <div class="feature-column">
+        <div class="feature-box">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a03efcc6f01f0a803e29f9a7d4f2fb10d901e1c4fa69dcea367f242472ab8920?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Feature icon" class="feature-icon">
+          <h3 class="feature-title">Lorem ipsum dolor sit amet</h3>
+          <p class="feature-description">
+            Lorem ipsum dolor sit amet consectetur. Quis cursus dignissim sollicitudin. Lorem ipsum dolor sit amet consectetur.
+          </p>
+          <div class="feature-link">
+            <span class="link-text">Discover more</span>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7b03c7cb8160a63c747dcf89923fbe35273eef369a2294230a1e6c80f6cfb476?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Arrow icon" class="link-icon">
+          </div>
+        </div>
+      </div>
+      <div class="feature-column-2">
+        <div class="feature-box-2">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0692e6162dac32705f28b8557b9bc2e616da85c6700c9fa81b425452716ec2d3?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Feature icon" class="feature-icon-2">
+          <h3 class="feature-title-2">Lorem ipsum dolor sit amet</h3>
+          <p class="feature-description-2">
+            Lorem ipsum dolor sit amet consectetur. Quis cursus dignissim sollicitudin. Lorem ipsum dolor sit amet consectetur.
+          </p>
+          <div class="feature-link-2">
+            <span class="link-text-2">Discover more</span>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7b03c7cb8160a63c747dcf89923fbe35273eef369a2294230a1e6c80f6cfb476?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Arrow icon" class="link-icon-2">
+          </div>
+        </div>
+      </div>
+      <div class="feature-column-3">
+        <div class="feature-box-3">
+          <div class="feature-icon-3"></div>
+          <h3 class="feature-title-3">Lorem ipsum dolor sit amet</h3>
+          <p class="feature-description-3">
+            Lorem ipsum dolor sit amet consectetur. Quis cursus dignissim sollicitudin. Lorem ipsum dolor sit amet consectetur.
+          </p>
+          <div class="feature-link-3">
+            <span class="link-text-3">Discover more</span>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7dda9122336e6f9beb02011cbf41820e7d699264c629070dfb5743e654df2cf5?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Arrow icon" class="link-icon-3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <h2 class="features-title">FEATURES</h2>
+  <section class="feature-highlight">
+    <div class="highlight-row">
+      <div class="left-column">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2fee153eb2c9c6d89317d0f065df7906d411c9b53930dafb8b941247c220da60?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Feature highlight" class="highlight-image">
+      </div>
+      <div class="highlight-column">
+        <div class="highlight-content">
+          <h2 class="highlight-title">Transform Your Device Management Experience</h2>
+          <p class="highlight-description">
+            Unlock a new era of device management with our user-friendly DHMS. Seamlessly navigate our intuitive interface as you harness the full potential of our comprehensive feature set. Effortlessly manage your devices and achieve maximum productivity with ease.
+          </p>
+          <div class="highlight-cta">
+            <span class="cta-text">Discover more</span>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7b03c7cb8160a63c747dcf89923fbe35273eef369a2294230a1e6c80f6cfb476?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Arrow icon" class="cta-icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stats-section-2">
+    <div class="stats-content">
+      <h2 class="stats-heading">Our Numbers Speak for Themselves</h2>
+      <div class="stats-grid">
+        <div class="stats-row-3">
+          <div class="stat-column">
+            <div class="stat-circle">
+              <div class="stat-number">85%</div>
+              <p class="stat-text">Quis cursitudin. Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="stat-column-2">
+            <div class="stat-circle-2">
+              <div class="stat-number-2">85%</div>
+              <p class="stat-text-2">Quis cursitudin. Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="stat-column-3">
+            <div class="stat-circle-3">
+              <div class="stat-number-3">85%</div>
+              <p class="stat-text-3">Quis cursitudin. Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="stat-column-4">
+            <div class="stat-circle-4">
+              <div class="stat-number-4">85%</div>
+              <p class="stat-text-4">Quis cursitudin. Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services-section">
+    <div class="services-row">
+      <div class="left-column">
+        <div class="services-content">
+          <h2 class="services-title">Premier services, flawless device performance</h2>
+          <p class="services-description">
+            Lorem ipsum dolor sit amet consectetur. Eros posuere consequat sit imperdiet. Lorem ipsum dolor sit amet consectetur. Eros posuere consequat sit imperdiet. Lorem ipsum dolor sit amet consectetur. Eros posuere consequat sit imperdiet.
+          </p>
+        </div>
+      </div>
+      <div class="services-column">
+        <div class="services-wrapper">
+          <div class="service-box">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/620a6d775af3c86774952b6b6afb37518f8685616dd5129273d5f9fd8172f813?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Service background" class="service-bg">
+            <p class="service-text">Experience a new level of efficiency with our inventory management solution</p>
+          </div>
+          <div class="service-card">
+            <div class="card-row">
+              <div class="card-icon-column">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ca5c34d9234b2e5c33c398258f634addbd5d5fb55937966274c7606673e85893?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Service icon" class="card-icon">
+              </div>
+              <div class="card-text-column">
+                <p class="card-text">Data-Driven Decisions for Peak Performance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="cta-container">
+    <button class="cta-button">
+      <span class="cta-text">Learn more</span>
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6285298fbaa553afdae5be354334d1dc5d2eb6e82adb5ea14e3118fb55282e94?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Arrow icon" class="cta-icon">
+    </button>
+    <div class="service-card-2">
+      <div class="card-row-2">
+        <div class="card-icon-column-2">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/548ce8e770153803af50f8b7ceb92e0a5c935ec641af18653a7360e455c6faa0?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Service icon" class="card-icon-2">
+        </div>
+        <div class="card-text-column-2">
+          <p class="card-text-2">Proactive Maintenance for Uninterrupted Operations</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="testimonials-title">TESTIMONIALS</h2>
+  <section class="testimonials-section">
+    <div class="testimonial-container">
+      <div class="testimonial-row">
+        <div class="left-column">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1faa8d529f11f9edebb9dd1f6867a36cc35794314bf3e9572d0d9fc54420cb39?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Testimonial image" class="testimonial-image">
+        </div>
+        <div class="testimonial-column">
+          <div class="testimonial-content">
+            <div class="quote-mark">"</div>
+            <div class="testimonial-text-wrapper">
+              <p class="testimonial-text">
+                "I think it is a wonderful idea, knowing that when I have a slight problem with my laptop I can get it fixed as far as I'm subscribed to DHMS, and I can get a loaner device to use during the meantime. I don't also have to stress myself to look for technicians to fix my laptop..."
+              </p>
+              <p class="testimonial-author">Lillian Justice</p>
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7469c5c5d94c94e73c8c506c81f58dcdb0963e9f2d3e545b9272f558882a16cb?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Rating" class="testimonial-rating">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <h2 class="pricing-title">Flexible Plans Tailored to Your Device Management Needs</h2>
+  <p class="pricing-subtitle">Discover the perfect subscription plan that fits your needs! At IT Service Desk Africa, we offer customized packages designed to meet your unique requirements.</p>
+  <section class="pricing-grid">
+    <div class="pricing-row">
+      <div class="pricing-column">
+        <div class="pricing-card">
+          <h3 class="plan-name">Corporate DHMS</h3>
+          <div class="pricing-divider"></div>
+          <div class="pricing-details">
+            <div class="pricing-item">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/41b37f46a4b2076d0d0a2bcac17333bba8dda3a5383c04c7beb02744a9f99520?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Checkmark" class="pricing-icon">
+              <span class="pricing-label">Deployment Cost :</span>
+              <span class="pricing-sublabel">starts at</span>
+            </div>
+            <div class="pricing-value">N1,500,000</div>
+            <div class="pricing-item-2">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/41b37f46a4b2076d0d0a2bcac17333bba8dda3a5383c04c7beb02744a9f99520?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Checkmark" class="pricing-icon-2">
+              <span class="pricing-label-2">Annual Payment Plan :</span>
+              <span class="pricing-sublabel-2">at</span>
+            </div>
+            <div class="pricing-value-wrapper">
+              <span class="pricing-value-2">N3,000</span>
+              <span class="pricing-period">Per Device/Month</span>
+            </div>
+            <div class="pricing-item-3">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/41b37f46a4b2076d0d0a2bcac17333bba8dda3a5383c04c7beb02744a9f99520?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Checkmark" class="pricing-icon-3">
+              <span class="pricing-label-3">Bi-Annual Payment Plan :</span>
+              <span class="pricing-sublabel-3">at</span>
+            </div>
+            <div class="pricing-value-wrapper-2">
+              <span class="pricing-value-3">N3,000</span>
+              <span class="pricing-period-2">Per Device/Month</span>
+            </div>
+          </div>
+          <div class="pricing-divider-2"></div>
+          <div class="pricing-features">
+            <div class="feature-item">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2f22a4f3c065cd18cf82158f03f4c6efc895a231ec5c6817ac89520d83ed0b8f?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Checkmark" class="feature-icon">
+              <div class="feature-text-wrapper">
+                <span class="feature-value">N3,500</span>
+                <span class="feature-label">Per Device/Month</span>
+              </div>
+            </div>
+            <div class="feature-item-2">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/118a4a3ae4234cc5e096960b30777069e7b89c35a65028fb9edf563f3b6aeb71?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Checkmark" class="feature-icon-2">
+              <div class="feature-text-wrapper-2">
+                <span class="feature-value-2">N12,000</span>
+                <span class="feature-label-2">Per Device/Month</span>
+              </div>
+            </div>
+          </div>
+          <button class="pricing-cta">Learn more</button>
+        </div>
+      </div>
+      <div class="pricing-column-2">
+        <div class="pricing-card-2">
+          <div class="popular-tag">Popular</div>
+          <h3 class="plan-name-2">Family DHMS</h3>
+          <div class="pricing-divider-3"></div>
+          <div class="pricing-details-2">
+            <div class="pricing-item-4">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8ac30d232923ac94c01a8cbc0ddcfa6b23c956a12429d51e1239cac7be6460d3?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Checkmark" class="pricing-icon-4">
+              <span class="pricing-label-4">Deployment Cost :</span>
+              <span class="pricing-sublabel-4">is</span>
+              <span class="pricing-value-4">FREE</span>
+            </div>
+            <div class="pricing-item-5">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8ac30d232923ac94c01a8cbc0ddcfa6b23c956a12429d51e1239cac7be6460d3?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Checkmark" class="pricing-icon-5">
+              <span class="pricing-label-5">Payment Plan :</span>
+              <span class="pricing-sublabel-5">Annual</span>
+            </div>
+          </div>
+          <div class="pricing-divider-4"></div>
+          <div class="pricing-features-2">
+            <div class="feature-item-3">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb7b3088903d6bdff0c3dd5426347ee24baff1d2d60181461dc05101c3521eec?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Checkmark" class="feature-icon-3">
+              <div class="feature-text-wrapper-3">
+                <span class="feature-value-3">N3,500</span>
+                <span class="feature-label-3">Per Device/Month</span>
+              </div>
+            </div>
+            <div class="feature-item-4">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0d0ac780f7957b848953b8f1fa3d8100a422d68b9621690d332116b752ca73a4?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Checkmark" class="feature-icon-4">
+              <div class="feature-text-wrapper-4">
+                <span class="feature-value-4">N12,000</span>
+                <span class="feature-label-4">Per Device/Month</span>
+              </div>
+            </div>
+          </div>
+          <button class="pricing-cta-2">Get Started</button>
+        </div>
+      </div>
+      <div class="pricing-column-3">
+        <div class="pricing-card-3">
+          <h3 class="plan-name-3">Student DHMS</h3>
+          <div class="pricing-divider-5"></div>
+          <div class="pricing-details-3">
+            <div class="pricing-item-6">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/41b37f46a4b2076d0d0a2bcac17333bba8dda3a5383c04c7beb02744a9f99520?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Checkmark" class="pricing-icon-6">
+              <span class="pricing-label-6">Deployment Cost :</span>
+              <span class="pricing-sublabel-6">is</span>
+              <span class="pricing-value-5">FREE</span>
+            </div>
+            <div class="pricing-item-7">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/41b37f46a4b2076d0d0a2bcac17333bba8dda3a5383c04c7beb02744a9f99520?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Checkmark" class="pricing-icon-7">
+              <span class="pricing-label-7">Payment Plan :</span>
+              <span class="pricing-sublabel-7">Annual</span>
+            </div>
+          </div>
+          <div class="pricing-divider-6"></div>
+          <div class="pricing-features-3">
+            <div class="feature-item-5">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2f22a4f3c065cd18cf82158f03f4c6efc895a231ec5c6817ac89520d83ed0b8f?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Checkmark" class="feature-icon-5">
+              <div class="feature-text-wrapper-5">
+                <span class="feature-value-5">N3,500</span>
+                <span class="feature-label-5">Per Device/Month</span>
+              </div>
+            </div>
+            <div class="feature-item-6">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4cee77291cf653cfe20c7cc3339b364619a455a1dc86418be5948199ab393eb5?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Checkmark" class="feature-icon-6">
+              <div class="feature-text-wrapper-6">
+                <span class="feature-value-6">N12,000</span>
+                <span class="feature-label-6">Per Device/Month</span>
+              </div>
+            </div>
+          </div>
+          <button class="pricing-cta-3">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="cta-content">
+      <p class="cta-text">Lorem ipsum dolor sit amet consectetur amet consectetur.</p>
+      <div class="cta-button-2"></div>
+    </div>
+  </section>
+  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/308be4c76e93f692b3567d7cab7b3ae5df4e2ef3b3687bc0cafb988754c1d97e?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Floating icon" class="floating-icon">
+  <footer class="footer">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb0f6ca998e9990b7a0eeadb5d59059aef45b61dadb14db091f9228f94c690af?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Footer logo" class="footer-logo">
+    <div class="footer-content">
+      <p class="footer-text">We know how important customer experience is for a business and therefore, we strive</p>
+      <div class="footer-links">
+        <div class="footer-row">
+          <div class="footer-column">
+            <a href="#" class="footer-link">Lorem ipsum dolor sit amet consectetur. Eros posuere consequat sit imperdiet.</a>
+          </div>
+          <div class="footer-column-2">
+            <a href="#" class="footer-link-2">Lorem ipsum dolor sit amet consectetur. Eros posuere consequat sit imperdiet.</a>
+          </div>
+          <div class="footer-column-3">
+            <a href="#" class="footer-link-3">Lorem ipsum dolor sit amet consectetur. Eros posuere consequat sit imperdiet.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-company">IT Service Desk Africa</div>
+      <div class="footer-copyright">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/587f10517da145342ab6b4b7e0b46f9cc72d7bbc781a5e3787c50b9100335abb?apiKey=ac54fbc23f5f41a4a8406c0c40795ee9&" alt="Copyright icon" class="footer-logo-2">
+        <p class="copyright-text">Copyright 2024 ITSA | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+</div>
+ -->
+
+
+ <!doctype html>
 <html lang=en>
   <head>
-    <title>werkzeug.routing.exceptions.BuildError: Could not build url for endpoint &#39;views.get_all&#39;. Did you forget to specify values [&#39;model&#39;]?
+    <title>  File &#34;&lt;string&gt;&#34;, line 0
  // Werkzeug Debugger</title>
     <link rel="stylesheet" href="?__debugger__=yes&amp;cmd=resource&amp;f=style.css">
     <link rel="shortcut icon"
@@ -11,20 +1580,22 @@
       var CONSOLE_MODE = false,
           EVALEX = true,
           EVALEX_TRUSTED = false,
-          SECRET = "VakH1bwz2zcdnxahMfKq";
+          SECRET = "BrK1SCDfIUO6WibXUrnB";
     </script>
   </head>
   <body style="background-color: #fff">
     <div class="debugger">
-<h1>BuildError</h1>
+<h1>SyntaxError</h1>
 <div class="detail">
-  <p class="errormsg">werkzeug.routing.exceptions.BuildError: Could not build url for endpoint &#39;views.get_all&#39;. Did you forget to specify values [&#39;model&#39;]?
+  <p class="errormsg">  File &#34;&lt;string&gt;&#34;, line 0
+    
+SyntaxError: invalid syntax
 </p>
 </div>
 <h2 class="traceback">Traceback <em>(most recent call last)</em></h2>
 <div class="traceback">
   <h3></h3>
-  <ul><li><div class="frame" id="frame-2411244081872">
+  <ul><li><div class="frame" id="frame-1911358265888">
   <h4>File <cite class="filename">"C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py"</cite>,
       line <em class="line">1478</em>,
       in <code class="function">__call__</code></h4>
@@ -37,7 +1608,7 @@
 <span class="ws">        </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre></div>
 </div>
 
-<li><div class="frame" id="frame-2411244086192">
+<li><div class="frame" id="frame-1911358269632">
   <h4>File <cite class="filename">"C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py"</cite>,
       line <em class="line">1458</em>,
       in <code class="function">wsgi_app</code></h4>
@@ -55,7 +1626,7 @@
 <pre class="line after"><span class="ws">        </span>finally:</pre></div>
 </div>
 
-<li><div class="frame" id="frame-2411244086336">
+<li><div class="frame" id="frame-1911358269920">
   <h4>File <cite class="filename">"C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py"</cite>,
       line <em class="line">1455</em>,
       in <code class="function">wsgi_app</code></h4>
@@ -73,7 +1644,7 @@
 <pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre></div>
 </div>
 
-<li><div class="frame" id="frame-2411244086480">
+<li><div class="frame" id="frame-1911358270064">
   <h4>File <cite class="filename">"C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py"</cite>,
       line <em class="line">869</em>,
       in <code class="function">full_dispatch_request</code></h4>
@@ -91,7 +1662,7 @@
 <pre class="line after"><span class="ws">        </span>rv: ft.ResponseReturnValue | HTTPException,</pre></div>
 </div>
 
-<li><div class="frame" id="frame-2411244086624">
+<li><div class="frame" id="frame-1911358270208">
   <h4>File <cite class="filename">"C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py"</cite>,
       line <em class="line">867</em>,
       in <code class="function">full_dispatch_request</code></h4>
@@ -109,7 +1680,7 @@
 <pre class="line after"><span class="ws">    </span>def finalize_request(</pre></div>
 </div>
 
-<li><div class="frame" id="frame-2411244086768">
+<li><div class="frame" id="frame-1911358270352">
   <h4>File <cite class="filename">"C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py"</cite>,
       line <em class="line">852</em>,
       in <code class="function">dispatch_request</code></h4>
@@ -127,98 +1698,46 @@
 <pre class="line after"><span class="ws">        </span>error handling.</pre></div>
 </div>
 
-<li><div class="frame" id="frame-2411244086912">
-  <h4>File <cite class="filename">"C:\DictDB\website\auth.py"</cite>,
-      line <em class="line">22</em>,
-      in <code class="function">api_login</code></h4>
-  <div class="source "><pre class="line before"><span class="ws">    </span>user = User.query.filter_by(email=email).first()</pre>
-<pre class="line before"><span class="ws">    </span># print(f&#34;Hash: {generate_password_hash(&#39;78xcb11565&#39;)}&#34;)</pre>
-<pre class="line before"><span class="ws">    </span>if user:</pre>
-<pre class="line before"><span class="ws">        </span>if check_password_hash(user.password, password):</pre>
-<pre class="line before"><span class="ws">            </span>login_user(user, remember=True)</pre>
-<pre class="line current"><span class="ws">            </span>return redirect(url_for(&#39;views.get_all&#39;))
-<span class="ws">            </span>                ^^^^^^^^^^^^^^^^^^^^^^^^</pre>
-<pre class="line after"><span class="ws">        </span>else:</pre>
-<pre class="line after"><span class="ws">            </span>return &#34;Incorrect password.&#34;</pre>
-<pre class="line after"><span class="ws">    </span>else:</pre>
-<pre class="line after"><span class="ws">        </span>return &#34;Inturder&#34;</pre>
-<pre class="line after"><span class="ws"></span> </pre></div>
-</div>
-
-<li><div class="frame" id="frame-2411244087344">
-  <h4>File <cite class="filename">"C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\helpers.py"</cite>,
-      line <em class="line">222</em>,
-      in <code class="function">url_for</code></h4>
-  <div class="source library"><pre class="line before"><span class="ws">       </span>The ``_anchor`` and ``_method`` parameters were added.</pre>
+<li><div class="frame" id="frame-1911358270496">
+  <h4>File <cite class="filename">"C:\AssignmentPro\website\client_actions.py"</cite>,
+      line <em class="line">236</em>,
+      in <code class="function">submitForm</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">        </span>dbORM.add_entry(&#34;NotificationAPRO&#34;, encrypt.encrypter(str(_not)))</pre>
+<pre class="line before"><span class="ws">        </span>return &#34;success&#34;</pre>
 <pre class="line before"><span class="ws"></span> </pre>
-<pre class="line before"><span class="ws">    </span>.. versionchanged:: 0.9</pre>
-<pre class="line before"><span class="ws">       </span>Calls ``app.handle_url_build_error`` on build errors.</pre>
-<pre class="line before"><span class="ws">    </span>&#34;&#34;&#34;</pre>
-<pre class="line current"><span class="ws">    </span>return current_app.url_for(
-<span class="ws">    </span>       </pre>
-<pre class="line after"><span class="ws">        </span>endpoint,</pre>
-<pre class="line after"><span class="ws">        </span>_anchor=_anchor,</pre>
-<pre class="line after"><span class="ws">        </span>_method=_method,</pre>
-<pre class="line after"><span class="ws">        </span>_scheme=_scheme,</pre>
-<pre class="line after"><span class="ws">        </span>_external=_external,</pre></div>
-</div>
-
-<li><div class="frame" id="frame-2411244088496">
-  <h4>File <cite class="filename">"C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py"</cite>,
-      line <em class="line">1071</em>,
-      in <code class="function">url_for</code></h4>
-  <div class="source library"><pre class="line before"><span class="ws">            </span>)</pre>
-<pre class="line before"><span class="ws">        </span>except BuildError as error:</pre>
-<pre class="line before"><span class="ws">            </span>values.update(</pre>
-<pre class="line before"><span class="ws">                </span>_anchor=_anchor, _method=_method, _scheme=_scheme, _external=_external</pre>
-<pre class="line before"><span class="ws">            </span>)</pre>
-<pre class="line current"><span class="ws">            </span>return self.handle_url_build_error(error, endpoint, values)
-<span class="ws">            </span>       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class="line before"><span class="ws">    </span>except Exception as e:</pre>
+<pre class="line before"><span class="ws">        </span>print(f&#34;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;{e}&#34;)</pre>
+<pre class="line current"><span class="ws">        </span>raise e
+<span class="ws">        </span>^^^^^^^</pre>
+<pre class="line after"><span class="ws">        </span>return &#34;failed&#34;</pre>
 <pre class="line after"><span class="ws"></span> </pre>
-<pre class="line after"><span class="ws">        </span>if _anchor is not None:</pre>
-<pre class="line after"><span class="ws">            </span>_anchor = _url_quote(_anchor, safe=&#34;%!#$&amp;&#39;()*+,/:;=?@&#34;)</pre>
-<pre class="line after"><span class="ws">            </span>rv = f&#34;{rv}#{_anchor}&#34;</pre>
-<pre class="line after"><span class="ws"></span> </pre></div>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws"></span>@ca.route(&#34;/view-response-table/&lt;string:unique_id&gt;&#34;)</pre>
+<pre class="line after"><span class="ws"></span>@login_required</pre></div>
 </div>
 
-<li><div class="frame" id="frame-2411244088640">
-  <h4>File <cite class="filename">"C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py"</cite>,
-      line <em class="line">1060</em>,
-      in <code class="function">url_for</code></h4>
-  <div class="source library"><pre class="line before"><span class="ws">            </span>raise ValueError(&#34;When specifying &#39;_scheme&#39;, &#39;_external&#39; must be True.&#34;)</pre>
-<pre class="line before"><span class="ws"></span> </pre>
-<pre class="line before"><span class="ws">        </span>self.inject_url_defaults(endpoint, values)</pre>
-<pre class="line before"><span class="ws"></span> </pre>
-<pre class="line before"><span class="ws">        </span>try:</pre>
-<pre class="line current"><span class="ws">            </span>rv = url_adapter.build(  # type: ignore[union-attr]
-<span class="ws">            </span>     </pre>
-<pre class="line after"><span class="ws">                </span>endpoint,</pre>
-<pre class="line after"><span class="ws">                </span>values,</pre>
-<pre class="line after"><span class="ws">                </span>method=_method,</pre>
-<pre class="line after"><span class="ws">                </span>url_scheme=_scheme,</pre>
-<pre class="line after"><span class="ws">                </span>force_external=_external,</pre></div>
-</div>
-
-<li><div class="frame" id="frame-2411244088784">
-  <h4>File <cite class="filename">"C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\routing\map.py"</cite>,
-      line <em class="line">919</em>,
-      in <code class="function">build</code></h4>
-  <div class="source library"><pre class="line before"><span class="ws">        </span>else:</pre>
-<pre class="line before"><span class="ws">            </span>values = {}</pre>
-<pre class="line before"><span class="ws"></span> </pre>
-<pre class="line before"><span class="ws">        </span>rv = self._partial_build(endpoint, values, method, append_unknown)</pre>
-<pre class="line before"><span class="ws">        </span>if rv is None:</pre>
-<pre class="line current"><span class="ws">            </span>raise BuildError(endpoint, values, method, self)
-<span class="ws">            </span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
-<pre class="line after"><span class="ws"></span> </pre>
-<pre class="line after"><span class="ws">        </span>domain_part, path, websocket = rv</pre>
-<pre class="line after"><span class="ws">        </span>host = self.get_host(domain_part)</pre>
-<pre class="line after"><span class="ws"></span> </pre>
-<pre class="line after"><span class="ws">        </span>if url_scheme is None:</pre></div>
+<li><div class="frame" id="frame-1911359161104">
+  <h4>File <cite class="filename">"C:\AssignmentPro\website\client_actions.py"</cite>,
+      line <em class="line">195</em>,
+      in <code class="function">submitForm</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>&#34;user_id&#34;: &#34;AN101&#34; if responder == &#34;anonymous&#34; else request.form[&#39;user_id&#39;],</pre>
+<pre class="line before"><span class="ws">            </span>&#34;data&#34;: form_responses,</pre>
+<pre class="line before"><span class="ws">            </span>&#39;datestamp&#39;: f&#34;{function_pool.getDateTime()[0]}&#34;,</pre>
+<pre class="line before"><span class="ws">            </span>&#39;timestamp&#39;: f&#34;{function_pool.getDateTime()[1]}&#34;</pre>
+<pre class="line before"><span class="ws">        </span>}</pre>
+<pre class="line current"><span class="ws">        </span>TheLiteralForm = eval(encrypt.decrypter(TheForm[&#39;responses&#39;]))
+<span class="ws">        </span>                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre>
+<pre class="line after"><span class="ws">        </span>TheLiteralForm.append(_)</pre>
+<pre class="line after"><span class="ws">        </span>dbORM.update_entry(</pre>
+<pre class="line after"><span class="ws">            </span>&#34;FormAPRO&#34;,</pre>
+<pre class="line after"><span class="ws">            </span>f&#34;{dbORM.find_one(&#39;FormAPRO&#39;, &#39;unique_id&#39;, unique_id)}&#34;,</pre>
+<pre class="line after"><span class="ws">            </span>str(</pre></div>
 </div>
 </ul>
-  <blockquote>werkzeug.routing.exceptions.BuildError: Could not build url for endpoint &#39;views.get_all&#39;. Did you forget to specify values [&#39;model&#39;]?
-</blockquote>
+  <pre class=syntaxerror>  File &#34;&lt;string&gt;&#34;, line 0
+    
+SyntaxError: invalid syntax
+</pre>
 </div>
 
 <div class="plain">
@@ -244,21 +1763,14 @@
   File &#34;C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py&#34;, line 852, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &#34;C:\DictDB\website\auth.py&#34;, line 22, in api_login
-    return redirect(url_for(&#39;views.get_all&#39;))
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &#34;C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\helpers.py&#34;, line 222, in url_for
-    return current_app.url_for(
-           ^^^^^^^^^^^^^^^^^^^^
-  File &#34;C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py&#34;, line 1071, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &#34;C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py&#34;, line 1060, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &#34;C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\routing\map.py&#34;, line 919, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint &#39;views.get_all&#39;. Did you forget to specify values [&#39;model&#39;]?
+  File &#34;C:\AssignmentPro\website\client_actions.py&#34;, line 236, in submitForm
+    raise e
+  File &#34;C:\AssignmentPro\website\client_actions.py&#34;, line 195, in submitForm
+    TheLiteralForm = eval(encrypt.decrypter(TheForm[&#39;responses&#39;]))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &#34;&lt;string&gt;&#34;, line 0
+    
+SyntaxError: invalid syntax
 </textarea>
 </div>
 <div class="explanation">
@@ -312,21 +1824,14 @@ Traceback (most recent call last):
   File "C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 852, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\DictDB\website\auth.py", line 22, in api_login
-    return redirect(url_for('views.get_all'))
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\helpers.py", line 222, in url_for
-    return current_app.url_for(
-           ^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1071, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1060, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Bluvid\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\routing\map.py", line 919, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.get_all'. Did you forget to specify values ['model']?
+  File "C:\AssignmentPro\website\client_actions.py", line 236, in submitForm
+    raise e
+  File "C:\AssignmentPro\website\client_actions.py", line 195, in submitForm
+    TheLiteralForm = eval(encrypt.decrypter(TheForm['responses']))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 0
+    
+SyntaxError: invalid syntax
 
 
 -->
