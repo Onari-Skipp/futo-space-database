@@ -1,5 +1,5 @@
 # import json
-# from .. import encrypt
+from .. import encrypt
 
 # with open("instance/_io/database_models.json", "r") as dbFile:
 # 	db = json.load(dbFile)
@@ -229,6 +229,12 @@ class DictDB:
             self.model_schemas[model_name] = eval(content.replace("Schema: ", ""))
         return self.model_schemas[model_name]
 
+    @lru_cache(maxsize=32)
+    def _decrypt_and_clean(self, encrypted_text):
+        decrypted_text = encrypt.decrypter(encrypted_text)
+        cleaned_sarahdb_data = decrypted_text.replace("'", '"')
+        return cleaned_sarahdb_data
+
     def get_all(self, model_name):
         return self._load_model(model_name)
 
@@ -263,7 +269,8 @@ class DictDB:
         return [model_name, database]
 
     def add_entry(self, model_name, cvp):
-        cvp = json.loads(cvp)
+        print("asdadd>>>>>>>>asa>>>>>>>>>>>> ", encrypt.decrypter(cvp), " ", type(encrypt.decrypter(cvp)))
+        cvp = json.loads(self._decrypt_and_clean(cvp))
         database = self._load_model(model_name)
         schema = self._get_schema(model_name)
         
@@ -276,7 +283,7 @@ class DictDB:
         return [model_name, database]
 
     def update_entry(self, model_name, column, cvp, dnd=False):
-        cvp = json.loads(cvp) if not dnd else eval(cvp)
+        cvp = json.loads(self._decrypt_and_clean(cvp)) if not dnd else eval(cvp)
         database = self._load_model(model_name)
         database[column].update(cvp)
         self._save_model(model_name, database)
