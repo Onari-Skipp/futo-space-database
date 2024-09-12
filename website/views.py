@@ -226,7 +226,10 @@ def get_all(api_email, api_password, api_key, model):
 @views.route('/<string:api_email>/<string:api_password>/<string:api_key>/handler/find_all/<string:model>/<string:column>/<string:value>')
 @api_required
 def find_all(api_email, api_password, api_key, model, column, value):
-    return jsonify(dtb.find_all(model, column, value))
+    result = dtb.find_all(model, column, value)
+    if result == []:
+        return jsonify({"status": ['not found', []]}), 404
+    return jsonify({"status": ["found", result]})
 
 @views.route('/<string:api_email>/<string:api_password>/<string:api_key>/handler/add_one/<string:model>/<string:column>/<string:item>')
 @api_required
