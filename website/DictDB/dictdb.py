@@ -208,6 +208,12 @@ import json
 import os
 from functools import lru_cache
 
+PRODUCTION = True
+if PRODUCTION == True:
+    data_location_prefix = "mysite/website/DictDB/"
+else:
+    data_location_prefix = ""
+
 class DictDB:
     def __init__(self):
         self.cache = {}
@@ -216,14 +222,14 @@ class DictDB:
     @lru_cache(maxsize=32)
     def _load_model(self, model_name):
         if model_name not in self.cache:
-            with open(f"instance/_io/models/{model_name}.json", "r") as model:
+            with open(f"{data_location_prefix}instance/_io/models/{model_name}.json", "r") as model:
                 self.cache[model_name] = json.load(model)
         return self.cache[model_name]
 
     @lru_cache(maxsize=32)
     def _get_schema(self, model_name):
         if model_name not in self.model_schemas:
-            settings_path = f"instance/_io/models/model_settings/{model_name}_settings.modelsettings"
+            settings_path = f"{data_location_prefix}instance/_io/models/model_settings/{model_name}_settings.modelsettings"
             with open(settings_path, "r") as model_settings:
                 content = model_settings.read()
             self.model_schemas[model_name] = eval(content.replace("Schema: ", ""))
@@ -270,7 +276,14 @@ class DictDB:
 
     def add_entry(self, model_name, cvp):
         print("asdadd>>>>>>>>asa>>>>>>>>>>>> ", encrypt.decrypter(cvp), " ", type(encrypt.decrypter(cvp)))
-        cvp = json.loads(self._decrypt_and_clean(cvp))
+        
+        try:
+            cvp = json.loads(self._decrypt_and_clean(cvp))
+        except json.JSONDecodeError as e:
+            print(f"Error: {e}")
+            print("JSON Data")
+            print(self._decrypt_and_clean(cvp))
+
         database = self._load_model(model_name)
         schema = self._get_schema(model_name)
         

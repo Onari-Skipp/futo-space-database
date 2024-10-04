@@ -1,0 +1,1 @@
+Schema: ['image1', 'image2', 'image3', 'name', 'description', 'datestamp', 'timestamp', 'type', 'price', 'location']

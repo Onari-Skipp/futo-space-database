@@ -1,0 +1,44 @@
+{
+    "1": {
+        "id": "1",
+        "image1": "0",
+        "image2": "1",
+        "image3": "2",
+        "name": "Antique Chair",
+        "description": "Vintage wooden chair with intricate carvings.",
+        "datestamp": "2023-12-25",
+        "timestamp": "1671958400",
+        "type": "furniture",
+        "price": "5000",
+        "user_id": "6",
+        "location": "Lagos"
+    },
+    "2": {
+        "id": "2",
+        "image1": "2",
+        "image2": "0",
+        "image3": "3",
+        "name": "Old Television",
+        "description": "Vintage CRT television in working condition.",
+        "datestamp": "2023-12-26",
+        "timestamp": "1672044800",
+        "type": "electronics",
+        "price": "2000",
+        "user_id": "4",
+        "location": "Abuja"
+    },
+    "3": {
+        "id": "3",
+        "image1": "3",
+        "image2": "1",
+        "image3": "0",
+        "name": "Vintage Clothing",
+        "description": "Collection of vintage clothing items.",
+        "datestamp": "2023-12-27",
+        "timestamp": "1672131200",
+        "type": "fashion",
+        "price": "3000",
+        "user_id": "5",
+        "location": "Port Harcourt"
+    }
+}
