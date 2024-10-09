@@ -29,8 +29,8 @@ This project is a Flask-based web application that uses a custom dictionary-base
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/dictdb-flask-project.git
-   cd dictdb-flask-project
+   git clone https://github.com/DavidNzube101/SarahDB.git
+   cd SarahDB
    ```
 
 2. Create a virtual environment and activate it:
