@@ -1,0 +1,13 @@
+{
+    "0": {
+        "amount": "1000",
+        "type": "payment",
+        "sender_id": "5",
+        "recipient_id": "3",
+        "datestamp": "2024-07-12",
+        "timestamp": "21:12:35",
+        "transaction_id": "asa1212xx21221owe",
+        "status": "success",
+        "id": "0"
+    }
+}

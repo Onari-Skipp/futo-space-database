@@ -1,0 +1,43 @@
+{
+    "0": {
+        "truck_make": "Chevrolet",
+        "truck_model": "Silverado",
+        "truck_year": "2022",
+        "truck_mileage": "45678",
+        "availiability": "true",
+        "truck_color": "Green",
+        "truck_vin": "STUVWXYZ12345678",
+        "truck_id": "21x12"
+    },
+    "1": {
+        "truck_make": "Ford",
+        "truck_model": "F-150",
+        "availiability": "true",
+        "truck_year": "2023",
+        "truck_mileage": "34567",
+        "truck_color": "Red",
+        "truck_vin": "JKLMNOPQR12345678",
+        "truck_id": "9wx10"
+    },
+    "2": {
+        "truck_make": "Toyota",
+        "availiability": "false",
+        "truck_model": "Hilux",
+        "truck_year": "2024",
+        "truck_mileage": "12345",
+        "truck_color": "Blue",
+        "truck_vin": "ABCDEFGHIJ12345678",
+        "truck_id": "4rTx2"
+    },
+    "3": {
+        "truck_make": "Mercedes",
+        "truck_model": "MMM",
+        "truck_year": "2013",
+        "truck_mileage": "22122",
+        "truck_color": "Green",
+        "availiability": "true",
+        "truck_vin": "90090909ADSDSS",
+        "truck_id": "dMFnT",
+        "id": "3"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "0": {
+        "product_id": "1",
+        "seller_id": "4",
+        "buyer_id": "8",
+        "driver_id": "12",
+        "current_location": "With Seller",
+        "delivery_status": "not started",
+        "datestamp": "2024-10-05",
+        "timestamp": "21:18:33",
+        "id": "0",
+        "parcel_tracking_id": "2828xyKAt911w9ER2O1",
+        "transaction_id": "asa1212xx21221owe"
+    }
+}

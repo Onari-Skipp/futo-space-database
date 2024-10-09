@@ -1,0 +1,1 @@
+Schema: ["truck_make", "truck_model", "truck_year", "truck_mileage", "truck_color", "truck_vin", "truck_id"]

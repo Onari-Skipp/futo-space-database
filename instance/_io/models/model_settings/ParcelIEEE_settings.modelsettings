@@ -1,0 +1,1 @@
+Schema: ["product_id", "seller_id", "buyer_id", "driver_id", "current_location", "delivery_status", "datestamp", "timestamp", "parcel_tracking_id", "transaction_id"]

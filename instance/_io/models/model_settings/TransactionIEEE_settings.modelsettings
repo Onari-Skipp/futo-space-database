@@ -1,0 +1,1 @@
+Schema: ["amount", "type", "sender_id", "recipient_id", "datestamp", "timestamp", "transaction_id", "status"]
