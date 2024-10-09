@@ -8,7 +8,7 @@ from functools import lru_cache
 PRODUCTION = True
 
 if PRODUCTION == True:
-    data_location_prefix = "mysite/website/DictDB/"
+    data_location_prefix = "sarahdb/SarahDB/website/DictDB/"
 else:
     data_location_prefix = ""
 
