@@ -1,1 +1,0 @@
-Schema: ['name', 'assignment_id', 'provider', 'content', 'image_name', 'image_raw', 'review', 'datestamp', 'timestamp']

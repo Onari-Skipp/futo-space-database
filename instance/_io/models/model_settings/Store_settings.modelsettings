@@ -1,1 +1,0 @@
-Schema: ['id', 'name', 'description', 'user_id', 'socials', 'banner_picture', 'banner_picture_path', 'address', 'opening_hour', 'closing_hour', 'niche']

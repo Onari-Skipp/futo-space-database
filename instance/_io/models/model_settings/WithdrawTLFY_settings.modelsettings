@@ -1,1 +1,0 @@
-Schema: ['user_wallet_address', 'dob', 'tid', 'username', 'user_first_name', 'user_last_name', 'timestamp', 'datestamp', 'status', 'amount', 'bank', 'account_number']

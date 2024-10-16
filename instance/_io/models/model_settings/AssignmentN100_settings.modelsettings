@@ -1,1 +1,0 @@
-Schema: ['id', 'note_id', 'content', 'timestamp', 'datestamp']

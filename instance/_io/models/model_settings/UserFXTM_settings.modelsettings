@@ -1,1 +1,0 @@
-Schema: ['email', 'password', 'first_name', 'last_name', 'wallet_balance', 'fxtm_id', 'is_verified', 'phone_number', 'country', 'user_type', 'verify_docs']

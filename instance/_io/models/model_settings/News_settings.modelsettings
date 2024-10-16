@@ -1,1 +1,0 @@
-Schema: ['id', 'title', 'image', 'image_path', 'timestamp', 'datestamp']

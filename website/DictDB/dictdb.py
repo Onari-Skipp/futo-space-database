@@ -8,7 +8,7 @@ from functools import lru_cache
 PRODUCTION = True
 
 if PRODUCTION == True:
-    data_location_prefix = "SarahDB/"
+    data_location_prefix = "futo-space-database/"
 else:
     data_location_prefix = ""
 
@@ -151,11 +151,11 @@ class DictDB:
         database = self._load_model(model_name)
         new_id = str(max(map(int, database.keys())) + 1)
         schema = self._get_schema(model_name)
-        
+
         new_entry = {col: "NULL" for col in schema}
         new_entry[column] = item
         new_entry['id'] = new_id
-        
+
         database[new_id] = new_entry
         self._save_model(model_name, database)
         return [model_name, database]
@@ -180,11 +180,11 @@ class DictDB:
 
         database = self._load_model(model_name)
         schema = self._get_schema(model_name)
-        
+
         new_id = str(max(map(int, database.keys())) + 1)
         new_entry = {col: cvp.get(col, "NULL") for col in schema}
         new_entry['id'] = new_id
-        
+
         database[new_id] = new_entry
         self._save_model(model_name, database)
         return [model_name, database]
@@ -260,18 +260,18 @@ class DictDB:
         """
         database = self._load_model(model_name)
         new_id = "0" if not database else str(max(map(int, database.keys())) + 1)
-        
+
         new_entry = {col: "NULL" for col in columns}
         new_entry['id'] = new_id
         database[new_id] = new_entry
-        
+
         self._save_model(model_name, database)
-        
+
         columns_refined = ['id'] + columns
         settings_path = f'instance/_io/models/model_settings/{model_name}_settings.modelsettings'
         with open(settings_path, "w") as model_settings:
             model_settings.write(f"Schema: {columns_refined}")
-        
+
         self.model_schemas[model_name] = columns_refined
         return f"Added columns {columns} to `{model_name}`"
 
@@ -325,18 +325,18 @@ class DictDB:
         database = self._load_model(model_name)
         new_id = str(max(map(int, database.keys())) + 1)
         schema = self._get_schema(model_name)
-        
+
         new_entry = {col: "NULL" for col in schema}
         new_entry[column] = item
         new_entry['id'] = new_id
-        
+
         database[new_id] = new_entry
         self._save_model(model_name, database)
         return [model_name, database]
 
     def add_entry(self, model_name, cvp):
         print("asdadd>>>>>>>>asa>>>>>>>>>>>> ", encrypt.decrypter(cvp), " ", type(encrypt.decrypter(cvp)))
-        
+
         try:
             cvp = json.loads(self._decrypt_and_clean(cvp))
         except json.JSONDecodeError as e:
@@ -346,11 +346,11 @@ class DictDB:
 
         database = self._load_model(model_name)
         schema = self._get_schema(model_name)
-        
+
         new_id = str(max(map(int, database.keys())) + 1)
         new_entry = {col: cvp.get(col, "NULL") for col in schema}
         new_entry['id'] = new_id
-        
+
         database[new_id] = new_entry
         self._save_model(model_name, database)
         return [model_name, database]
@@ -381,18 +381,18 @@ class DictDB:
     def set_schema(self, model_name, columns):
         database = self._load_model(model_name)
         new_id = "0" if not database else str(max(map(int, database.keys())) + 1)
-        
+
         new_entry = {col: "NULL" for col in columns}
         new_entry['id'] = new_id
         database[new_id] = new_entry
-        
+
         self._save_model(model_name, database)
-        
+
         columns_refined = ['id'] + columns
         settings_path = f'{data_location_prefix}instance/_io/models/model_settings/{model_name}_settings.modelsettings'
         with open(settings_path, "w") as model_settings:
             model_settings.write(f"Schema: {columns_refined}")
-        
+
         self.model_schemas[model_name] = columns_refined
         return f"Added columns {columns} to `{model_name}`"
 

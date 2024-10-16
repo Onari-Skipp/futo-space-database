@@ -1,1 +1,0 @@
-Schema: ['agent_name', 'reg_number', 'is_verified', 'status', 'level', 'review', 'wallet_balance', 'phone_number']

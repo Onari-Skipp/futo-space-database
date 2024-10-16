@@ -1,1 +1,0 @@
-Schema: ['id', 'narration', 'price', 'image', 'image_path', 'user_id', 'timestamp', 'datestamp', 'delivery_period_date', 'delivery_period_time', 'number_of_copies', 'password', 'print_format', 'delivery_address_period', 'phone_number', 'address_close']

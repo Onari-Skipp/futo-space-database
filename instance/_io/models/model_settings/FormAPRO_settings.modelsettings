@@ -1,1 +1,0 @@
-Schema: ['label', 'unique_id', 'type', 'placeholder', 'responses', 'name', 'datestamp', 'timestamp', 'reg_number', 'title', 'visibility']

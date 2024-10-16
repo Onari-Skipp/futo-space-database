@@ -1,1 +1,0 @@
-Schema: ['name', 'points', 'users_id', 'task_type', 'task_link', 'description', 'users_id_done', 'timestamp', 'datestamp', 'expiry_date', 'image_raw', 'image_name', 'task_owner', 'task_device']

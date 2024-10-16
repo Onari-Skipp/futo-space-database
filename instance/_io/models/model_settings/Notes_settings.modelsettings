@@ -1,1 +1,0 @@
-Schema: ['id', 'name', 'content', 'timestamp', 'datestamp', 'lecturer', 'is_premium', 'textbook', 'manual']

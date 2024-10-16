@@ -1,1 +1,0 @@
-Schema: ["id", "first_name", "last_name", "email", "password", "reg_number", "saved_posts_id", "gender", "department", "faculty", "user_clicks_id", "following_id", "events_id", "saved_products_id", "dob"]

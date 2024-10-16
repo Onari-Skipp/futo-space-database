@@ -1,1 +1,0 @@
-Schema: ['first_name', 'last_name', 'password', 'email', 'reg_number', 'department', 'faculty', 'institution', 'onboarding_stage', 'level', 'profile_picture', 'phone_number', 'waitlist', 'subscripton_plan', 'tier', 'subscription_datestamp_start', 'subscription_datestamp_next']

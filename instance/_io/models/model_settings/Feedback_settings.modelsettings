@@ -1,1 +1,0 @@
-Schema: ['id', 'user_id', 'feedback', 'rating', 'from_screen']

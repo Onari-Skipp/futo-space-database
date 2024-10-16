@@ -1,1 +1,0 @@
-Schema: ['email', 'password', 'privilege', 'user_theme', 'organization', 'organization_id']

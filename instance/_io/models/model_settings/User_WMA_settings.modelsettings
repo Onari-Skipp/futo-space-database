@@ -1,1 +1,0 @@
-Schema: ['first_name', 'last_name', 'city', 'email', 'password', '0AUTH', 'address', 'state', 'wallet_balance', 'wallet_id', 'phone_number', 'temp_data', 'role']
