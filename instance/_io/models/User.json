@@ -1,3 +1,1 @@
-{
-    "0": {}
-}
+{"0": {}, "1": {"email": "testemail@gmgm.cm", "reg_number": "02012020310", "first_name": "", "last_name": "", "username": "NULL", "password": "scrypt:32768:8:1$Feabtl3hfmB3yN2p$ba58bff040a2ea4b2739fac33adae4bd9ac252d11481837bbc3cc4516769f5964be52cc1c12441b7e7b7c69f00122d466e576049559a2e3d3843dba9b98250c3", "interests": "NULL", "id": "1"}}
