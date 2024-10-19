@@ -1,0 +1,1 @@
+Schema: ["event_id", "price", "title", "ticket_listing_id", "style", "is_sold_out"]

@@ -1,1 +1,1 @@
-Schema: ['email', "reg_number", 'first_name', 'last_name', 'username', 'password', 'interests']
+Schema: ['email', "reg_number", 'first_name', 'last_name', 'username', 'password', 'interests', "bio", "department", "date_of_birth", "profile_image"]

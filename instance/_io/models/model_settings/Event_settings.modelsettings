@@ -1,0 +1,1 @@
+Schema: ["name", "description", "datestamp", "timestamp", "event_start_date", "event_start_time", "event_end_time", "location", "event_id", "is_tickets"]

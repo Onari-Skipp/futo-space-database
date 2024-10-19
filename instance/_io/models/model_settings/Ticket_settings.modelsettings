@@ -1,0 +1,1 @@
+Schema: ["event_id", "ticket_id", "purchaser_id", "price"]

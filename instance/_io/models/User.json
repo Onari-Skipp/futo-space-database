@@ -1,1 +1,72 @@
-{"0": {}, "1": {"email": "testemail@gmgm.cm", "reg_number": "02012020310", "first_name": "", "last_name": "", "username": "NULL", "password": "scrypt:32768:8:1$Feabtl3hfmB3yN2p$ba58bff040a2ea4b2739fac33adae4bd9ac252d11481837bbc3cc4516769f5964be52cc1c12441b7e7b7c69f00122d466e576049559a2e3d3843dba9b98250c3", "interests": "NULL", "id": "1"}}
+{
+    "1": {
+        "email": "testemail@gmgm.cm",
+        "reg_number": "02012020310",
+        "first_name": "",
+        "last_name": "",
+        "profile_image": "NULL",
+        "bio": "NULL",
+        "date_of_birth": "NULL",
+        "department": "NULL",
+        "username": "NULL",
+        "password": "scrypt:32768:8:1$Feabtl3hfmB3yN2p$ba58bff040a2ea4b2739fac33adae4bd9ac252d11481837bbc3cc4516769f5964be52cc1c12441b7e7b7c69f00122d466e576049559a2e3d3843dba9b98250c3",
+        "interests": "NULL",
+        "id": "1"
+    },
+    "2": {
+        "email": "onari3@mail.com",
+        "reg_number": "20231499878",
+        "first_name": "",
+        "last_name": "",
+        "profile_image": "NULL",
+        "bio": "I am a boy",
+        "date_of_birth": "2001/2/2",
+        "department": "Software Engineering",
+        "username": "jodjdj",
+        "password": "scrypt:32768:8:1$Xz7Eq4g5C2YkdYjO$8bb14a3982247ad7a52d963ac9cd6dabe8704fa2276e96df3f11f85b0f0b129bbd21698656087fdc7db3250d38dc33b8543165ab08437681a5eb6bde52e3b981",
+        "interests": "NULL",
+        "id": "2"
+    },
+    "3": {
+        "email": "rfqewjrq@tq.wetwt",
+        "reg_number": "20231388788",
+        "first_name": "",
+        "last_name": "",
+        "profile_image": "NULL",
+        "bio": "NULL",
+        "date_of_birth": "NULL",
+        "department": "NULL",
+        "username": "NULL",
+        "password": "scrypt:32768:8:1$qOy4sQfUSVT4Mh0r$a9b76569b1ae83f73552a1c13ddc2df7c87eb087facd2b979302c726e30d1dcb3837f84992932b654b7db512efc0b1a10d11d1ccf7f40a6d80499b067bb89c12",
+        "interests": "NULL",
+        "id": "3"
+    },
+    "4": {
+        "email": "rfqewrgq@tq.wetwt",
+        "reg_number": "20231255878",
+        "first_name": "",
+        "last_name": "",
+        "profile_image": "NULL",
+        "bio": "NULL",
+        "date_of_birth": "NULL",
+        "department": "NULL",
+        "username": "NULL",
+        "password": "scrypt:32768:8:1$uFOSoDqgWm8Ci9kt$5ce7dbbb44a01de4ff6640e106466bf5225673a928146e95c98d8b1ff19415d25fec70048e53f6f9199174c668f6de4afbf7e4fcc19655d21ce40b039fa7c9c7",
+        "interests": "NULL",
+        "id": "4"
+    },
+    "5": {
+        "email": "onarigeorge013iif@gmail.com",
+        "reg_number": "20232344543",
+        "first_name": "",
+        "last_name": "",
+        "profile_image": "NULL",
+        "bio": "NULL",
+        "date_of_birth": "NULL",
+        "department": "NULL",
+        "username": "NULL",
+        "password": "scrypt:32768:8:1$RDq9idi0YgnlfL76$a9e56030096a5fc04cc68cd4af41c527b35d4a470802cbaf3e5c1be23e4e386842047388f528b327f5a4bee4eb73d3879af394587acc11e2401c26305942dabc",
+        "interests": "NULL",
+        "id": "5"
+    }
+}
