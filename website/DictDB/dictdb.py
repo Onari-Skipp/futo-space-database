@@ -5,7 +5,7 @@ import json
 import os
 from functools import lru_cache
 
-PRODUCTION = False
+PRODUCTION = True
 
 if PRODUCTION == True:
     data_location_prefix = "futo-space-database/"
