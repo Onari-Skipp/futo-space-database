@@ -5,7 +5,7 @@ import json
 import os
 from functools import lru_cache
 
-PRODUCTION = True
+PRODUCTION = False
 
 if PRODUCTION == True:
     data_location_prefix = "futo-space-database/"
@@ -395,5 +395,3 @@ class DictDB:
 
         self.model_schemas[model_name] = columns_refined
         return f"Added columns {columns} to `{model_name}`"
-
-    # The add_relationship method is left as is, as it's not implemented in the original code

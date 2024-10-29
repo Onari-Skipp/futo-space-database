@@ -1,4 +1,4 @@
-from ..db import dbORM
+from ..DictDB import dictdb as db
 from ..id_generator import *
 from .. import function_pool
 from huggingface_hub import InferenceClient
@@ -9,6 +9,8 @@ from typing import Dict, List, TypedDict
 import re
 from ..id_generator import *
 
+dictdb = db.DictDB()
+
 class IntentActions:
     """
     Available actions for Intents made available by NLP
@@ -16,7 +18,7 @@ class IntentActions:
     def __init__(self, UserUniqueID: str, model: str):
         self.init = True
         self.model = model
-        self.user: dict = dbORM.get_all("User")[f'{function_pool.isFound("User", "user_unique_id", UserUniqueID)}']
+        self.user: dict = dictdb.get_all("User")[f'{dictdb.find_one("User", "user_unique_id", UserUniqueID)}']
         self.JaneDetails = {
             "Name": "Jane",
             "Date Of Birth": clean_date("2024-10-24"),
@@ -42,16 +44,16 @@ class IntentActions:
     
     def greetUser(self):
         responses = [
-            f"Hey {self.user['first_name']}, I'm {self.JaneDetails['Name']} your {self.JaneDetails['Product Integrated']} personal assistant. How can i help you today?",
-            f"Hello, {self.user['first_name']}! I'm {self.JaneDetails['Name']}, your go-to {self.JaneDetails['Product Integrated']} personal assistant. What can I do for you?",
-            f"Hi {self.user['first_name']}, I'm {self.JaneDetails['Name']}, your dedicated {self.JaneDetails['Product Integrated']} personal assistant. How can I assist you today?",
-            f"Good {self.JaneDetails['Time Of The Day']}, {self.user['first_name']}. I am {self.JaneDetails['Name']}, your {self.JaneDetails['Product Integrated']} personal assistant. Please let me know how I can be of service.",
-            f"Hello, {self.user['first_name']}. I'm {self.JaneDetails['Name']}, your {self.JaneDetails['Product Integrated']} personal assistant. Is there anything specific you'd like help with today?",
+            f"Hey {random.choice([self.user['first_name'], self.user['last_name']])}, I'm {self.JaneDetails['Name']} your {self.JaneDetails['Product Integrated']} personal assistant. How can i help you today?",
+            f"Hello, {random.choice([self.user['first_name'], self.user['last_name']])}! I'm {self.JaneDetails['Name']}, your go-to {self.JaneDetails['Product Integrated']} personal assistant. What can I do for you?",
+            f"Hi {random.choice([self.user['first_name'], self.user['last_name']])}, I'm {self.JaneDetails['Name']}, your dedicated {self.JaneDetails['Product Integrated']} personal assistant. How can I assist you today?",
+            f"Good {self.JaneDetails['Time Of The Day']}, {random.choice([self.user['first_name'], self.user['last_name']])}. I am {self.JaneDetails['Name']}, your {self.JaneDetails['Product Integrated']} personal assistant. Please let me know how I can be of service.",
+            f"Hello, {random.choice([self.user['first_name'], self.user['last_name']])}. I'm {self.JaneDetails['Name']}, your {self.JaneDetails['Product Integrated']} personal assistant. Is there anything specific you'd like help with today?",
         ]
         return random.choice(responses)
     
     def searchForProducts(self, search_input: str):
-        all_products = dbORM.get_all("Products")
+        all_products = dictdb.get_all("Products")
         replacement_string = generate_id(8)
         
         search_input = search_input.lower()
@@ -224,7 +226,7 @@ class IntentActions:
         
         if len(matching_product_ids) == 0:
             response: str = random.choice([
-                f"Sorry {self.user['first_name']}, I couldn't find any products that match your preferences. Please try again!",
+                f"Sorry {random.choice([self.user['first_name'], self.user['last_name']])}, I couldn't find any products that match your preferences. Please try again!",
                 f"Unfortunately, I wasn't able to find any products for you. Would you like to search for something else?",
                 f"I couldn't locate any products that fit your criteria. Maybe you want to adjust your search?",
                 f"Looks like there are no products that match your request. Feel free to ask about something else!"
@@ -233,10 +235,15 @@ class IntentActions:
             
         else:
             response: str = random.choice([
-                f"{self.user['first_name']}, check these out! I found some great products that match your preferences. {replacement_string}\n What do you think?",
+                f"{random.choice([self.user['first_name'], self.user['last_name']])}, check these out! I found some great products that match your preferences. {replacement_string}\n What do you think?",
                 f"take a look at these cool products I found! {replacement_string}",
                 f"I think you might like these products. {replacement_string} Check them out!",
-                f"I've identified these products {replacement_string}"
+                f"I've identified these products {replacement_string}",
+                f"Hey {random.choice([self.user['first_name'], self.user['last_name']])}, it's Jane from FSpace!   What's going on this evening? Is there anything I can help you with?",
+                f"Evening, {random.choice([self.user['first_name'], self.user['last_name']])}!  This is Jane, your FSpace assistant.  What can I do for you tonight?",
+                f"{random.choice([self.user['first_name'], self.user['last_name']])}, good evening!  Jane here, your FSpace PA.  Anything I can tackle for you before the day ends?",
+                f"Hey there {random.choice([self.user['first_name'], self.user['last_name']])}!  It's Jane from FSpace.  Just checking in - see if there's anything you need help with this evening.",
+                f"What's up, {random.choice([self.user['first_name'], self.user['last_name']])}?  Jane from FSpace here.  Let me know if there's something I can do for you as we wind down the day."
             ])
             products_names_listed: str = function_pool.list_to_string(matching_product_names) if len(matching_product_names) != 0 else ""
             response: str = response.replace(replacement_string, products_names_listed)

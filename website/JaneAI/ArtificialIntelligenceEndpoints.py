@@ -13,9 +13,8 @@ from datetime import datetime, timedelta
 import datetime as dt
 
 # Utilites
-from ..db import dbORM
+from ..DictDB import dictdb
 from .. import encrypt
-from .. import ScreenGoRoute
 from .. import function_pool
 import io # import subprocess
 from .. import id_generator
@@ -32,9 +31,10 @@ ArtificialIntelligenceEndpoints = Blueprint('ArtificialIntelligenceEndpoints', _
 aie = ArtificialIntelligenceEndpoints
 
 
-@aie.route('/api/fspace-backend/ai/send-message', methods=['POST'])
+@aie.route('/api/fspace-server-2/ai/send-message', methods=['POST'])
 def promptLLM():
     try:
+        
         prompt = request.form['prompt']
         try:
             model = request.form['model']

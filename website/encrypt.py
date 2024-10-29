@@ -1,3 +1,12 @@
+"""
+A collection of functions for encrypting and decrypting text using TYPE13 codes.
+
+This module provides the following functions:
+
+- `encrypter(string)`: Encrypts a string using TYPE13 codes.
+- `decrypter(encoded_str)`: Decrypts a string encoded with TYPE13 codes.
+- `validate_dc(data, dc)`: Validates whether two strings are equal.
+"""
 defs = {
 	"A" : "&00;",
 	"B" : "&01;",
@@ -93,7 +102,14 @@ for n in list(range(1000)):
 
 # print(defs)
 def encrypter(string):
-	
+	"""Encrypts a string using TYPE13 codes.
+
+    Args:
+        string (str): The string to be encrypted.
+
+    Returns:
+        str: The encrypted string.
+    """
 	re = []
 	slist = {}
 	for k, v in defs.items():
@@ -110,7 +126,14 @@ def encrypter(string):
 	return "".join(encoded)
 
 def decrypter(encoded_str):
-	
+	"""Decrypts a string encoded with TYPE13 codes.
+
+    Args:
+        encoded_str (str): The encoded string.
+
+    Returns:
+        str: The decrypted string.
+    """
 	en_list = encoded_str.split(";")
 	en_list_new = []
 	for en_item in en_list:
@@ -128,6 +151,15 @@ def decrypter(encoded_str):
 	return decoded_str
 
 def validate_dc(data, dc):
+	"""Validates whether two strings are equal.
+
+    Args:
+        data (str): The first string to compare.
+        dc (str): The second string to compare.
+
+    Returns:
+        bool: True if the strings are equal, False otherwise.
+    """
 	if data == dc:
 		return True
 	else:

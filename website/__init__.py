@@ -23,10 +23,14 @@ def initialize_app():
   from .views import views
   from .auth import auth
   from .IslandEndpoints import IslandEndpoints
+  from .JaneAI.ArtificialIntelligenceEndpoints import ArtificialIntelligenceEndpoints
+
 
   app.register_blueprint(views, url_prefix='/')
   app.register_blueprint(auth, url_prefix='/')
   app.register_blueprint(IslandEndpoints, url_prefix='/')
+  app.register_blueprint(ArtificialIntelligenceEndpoints, url_prefix='/')
+
 
   from .models import User
 
