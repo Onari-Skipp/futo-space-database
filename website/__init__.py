@@ -16,15 +16,17 @@ DB_NAME = "m.db"
 def initialize_app():
   app = Flask(__name__)
   app.config['SECRET_KEY'] = 'mmdkkdffkkfksdale'
-  app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///m.db'
+  app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///m.db'
 
   db.init_app(app)
 
   from .views import views
   from .auth import auth
+  from .IslandEndpoints import IslandEndpoints
 
   app.register_blueprint(views, url_prefix='/')
   app.register_blueprint(auth, url_prefix='/')
+  app.register_blueprint(IslandEndpoints, url_prefix='/')
 
   from .models import User
 
@@ -51,4 +53,3 @@ def create_db(the_app):
           db.create_all()
       print("Database created!")
 
-    

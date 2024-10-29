@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WH-MAS - Pay with Monnify</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    }
+
+    .checkout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    }
+
+    .checkout-container h2, h3 {
+    color: #2d7a2d;
+    }
+
+    .order-summary, .checkout-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    }
+
+    .order-summary ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+    }
+
+    .order-summary ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    }
+
+    .order-summary hr {
+    margin: 10px 0;
+    }
+
+    .total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    font-weight: bold;
+    }
+
+    .form-group {
+    margin-bottom: 20px;
+    }
+
+    .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2d7a2d;
+    }
+
+    .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c3c4c7;
+    border-radius: 5px;
+    }
+
+    .checkout-btn {
+    width: 80%;
+    padding: 12px;
+    background-color: #512d7a;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    /* flex-direction: row; */
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+    .checkout-btn:hover {
+    background-color: #256325;
+    }
+
+    /* Responsive Design */
+    @media (min-width: 768px) {
+    .checkout-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .order-summary, .checkout-form {
+        width: 48%;
+    }
+    }
+
+    </style>
+    <!-- <script src="{{ url_for('static', filename='js/ModalFlash.js') }}"></script> -->
+	<script type="text/javascript" src="https://sdk.monnify.com/plugin/monnify.js"></script>
+    <!-- <script src="{{ url_for('static', filename='js/MonnifyScript.js') }}"></script> -->
+</head>
+<body>
+
+    <main class="main-screen" style="background: url({{ url_for('static', filename='media/assets/ssa.jpg') }} ); background-repeat: no-repeat; background-size: cover; height: 100vh;  display: flex; align-items: center; justify-content: center;">
+
+        <div class="main-screen-content" style="display: grid; place-items: center; width: 100%;">
+            <div style="background: #f3f4f6; height: fit-content; width: fit-content; padding: 20px; border-radius: 10pc;">
+                <img src="https://futo-space.vercel.app/favicon.ico" alt="" style="height: 100px; width: 100px;">
+            </div>
+            <br>
+            <br>
+            <br>
+            <button class="checkout-btn" onclick="payWithMonnify(
+                '{{ amount }}',
+                '{{ first_name }}',
+                '{{ last_name }}',
+                '{{ email }}',
+                '{{ apiKey }}',
+                '{{ contractCode }}',
+                '{{ description }}',
+                '{{ product_ids }}'
+
+            )">
+                <img src="{{ url_for('static', filename='media/icons/icons8-secure-30 (1).png') }} " alt="">
+                <br>
+                <br>
+                <p>Pay with <b>Monnify</b</p>
+                <!-- {{ product_ids }} -->
+            </button>
+        </div>
+    </main>
+    
+    <main class="success-screen" style="display: none; align-items: center; justify-content: center; background: url({{ url_for('static', filename='media/assets/ssa.jpg') }} ); background-repeat: no-repeat; background-size: cover; height: 100vh;">
+
+        <div class="success-screen-content" style="display: none; place-items: center; width: 80%;">
+            <img src="{{ url_for('static', filename='media/icons/icons8-success-144.png') }} " alt="sucess">
+            <br>
+            <p align="center">Payment Successful.<br>You can go back to your WHMAS app.</p>
+        </div>
+
+    </main>
+    
+    <main class="failed-screen" style="display: none; align-items: center; justify-content: center; background: url({{ url_for('static', filename='media/assets/ssa.jpg') }} ); background-repeat: no-repeat; background-size: cover; height: 100vh;">
+
+        <div class="failed-screen-content" style="display: none; place-items: center; width: 80%;">
+            <img src="{{ url_for('static', filename='media/icons/icons8-fail-500.png') }} " alt="sucess" style="height: 100px; width: 100px;">
+            <br>
+            <p align="center">Aw snap!<br>Something went wrong. Try again later.</p>
+        </div>
+
+    </main>
+
+<script>
+    function payWithMonnify(
+        price_amount,
+        first_name,
+        last_name,
+        email,
+        API_KEY,
+        CONTRACT_CODE,
+        description,
+        product_ids
+
+        ) {
+        try {
+            MonnifySDK.initialize({
+                amount: parseInt(price_amount),
+                currency: "NGN",
+                reference: new String((new Date()).getTime()),
+                customerFullName: `${first_name} ${last_name}`,
+                customerEmail: `${email}`,
+                apiKey: `${API_KEY}`,
+                contractCode: `${CONTRACT_CODE}`,
+                paymentDescription: `${description}`,
+                metadata: {
+                    "name": `${first_name} ${last_name}`
+                },
+                onLoadStart: () => {
+                    console.log("loading has started");
+                },
+                onLoadComplete: () => {
+                    console.log("SDK is UP");
+                },
+                onComplete: function(response) {
+                    //Implement what happens when the transaction is completed.
+                    console.log(response['status']);
+
+                    form_data = new FormData()
+                    form_data.append('price', `${price_amount}`)
+                    form_data.append('buyer_email', email)
+                    form_data.append('product_ids', product_ids)
+                    console.log("PRODUCT IDS", product_ids);
+                    form_data.append('status', response['status'])
+                    fetch('/wh-mas/api/payment-callback', {
+                        method: 'POST',
+                        body: form_data
+                    })
+                    .then(response => response.text())
+                    .then((data) => {
+                        console.log(data);
+                        try {
+                            document.querySelector(".main-screen").style.display = "none"
+                            document.querySelector(".main-screen-content").style.display = "none"
+
+                            document.querySelector(".success-screen-content").style.display = "grid"
+                            document.querySelector(".success-screen").style.display = "flex"
+
+                            document.querySelector(".failed-screen").style.display = "none"
+                            document.querySelector(".failed-screen-content").style.display = "none"
+                        } catch(e) {
+                            console.log(e);  
+                            document.querySelector(".main-screen").style.display = "none"
+                            document.querySelector(".main-screen-content").style.display = "none"
+
+                            document.querySelector(".success-screen").style.display = "none"
+                            document.querySelector(".success-screen-content").style.display = "none"
+
+                            document.querySelector(".failed-screen").style.display = "flex"      
+                            document.querySelector(".failed-screen-content").style.display = "grid"
+
+                        }
+                    })
+                },
+                onClose: function(data) {
+                    //Implement what should happen when the modal is closed here
+                    console.log(data);   
+                }
+            });
+        } catch(e) {
+            // statements
+            // ModalFlashShow("Voho Subscription", "Check your internet connection and try again!", "error")
+            // setTimeout(()=>{
+            //     ModalFlashHide()
+            // } , 30000)
+            console.log(e);
+        }
+    }
+</script>
+</body>
+</html>

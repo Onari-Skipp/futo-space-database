@@ -1,0 +1,1 @@
+Schema: ["user_id", "product_id", "name", "price", "description", "category", "image_url", "quantity", "is_stock"]
