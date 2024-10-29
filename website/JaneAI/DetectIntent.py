@@ -6,12 +6,13 @@ PRODUCTION = True
 
 if PRODUCTION == True:
     data_location_prefix = "futo-space-database"
+    file_path = os.path.join(data_location_prefix, "website", "JaneAI", "Training Data", "predefined_intents.json")
+    
 else:
-    data_location_prefix = ""
+    file_path = os.path.join("website", "JaneAI", "Training Data", "predefined_intents.json")
+    
 
-file_path = os.path.join(data_location_prefix, "website", "JaneAI", "Training Data", "predefined_intents.json")
-
-with open(data_location_prefix + file_path, "r") as intent_dict_file:
+with open(file_path, "r") as intent_dict_file:
     INTENTS: dict = json.load(intent_dict_file)
 
 def detect_intent(user_input: str):
